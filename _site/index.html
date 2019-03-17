@@ -1,0 +1,669 @@
+<!--
+@license
+Copyright 2017 Peh Shu Wei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BarCamp Cyberjaya 2017</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="img/favicon.ico" rel="shortcut icon">
+	<meta charset="UTF-8">
+	<meta content="BarCamp Cyberjaya 2017" property="og:title">
+	<meta content="https://www.barcampcyberjaya.org/" property="og:url">
+	<meta content="https://www.barcampcyberjaya.org/img/opengraphimg.jpg" property="og:image">
+	<meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2017." property="og:description">
+	<meta name="theme-color" content="#07223D">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Event",
+			"name": "BarCamp Cyberjaya 2017",
+			"startDate" : "2017-08-05T09:00+0800",
+			"endDate" : "2017-08-05T18:00+0800",
+			"url" : "https://www.barcampcyberjaya.org/",
+			"location" : {
+				"@type" : "Place",
+				"sameAs" : "http://fci.mmu.edu.my",
+				"name" : "Faculty of Computing & Informatics",
+				"address" : "Multimedia University, Persiaran Multimedia, 63100 Cyberjaya, Selangor"
+			},
+			"description": "Unconference that focuses on technology, programming, and entrepreneurship.",
+			"image": "https://www.barcampcyberjaya.org/img/opengraphimg.jpg"
+		}
+	</script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+
+<body>
+	<!-- navigation -->
+	<nav class="page_scroll">
+		<div class="drawer">
+			<div class="drawer-container">
+				<a data-scroll href="#home" onClick="toggleDrawer()">Home</a>
+				<a data-scroll href="#about" onClick="toggleDrawer()">About</a>
+				<a data-scroll href="#division" onClick="toggleDrawer()">Division</a>
+				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
+				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Apply</a>
+			</div>
+			<div class="scrim" onClick="toggleDrawer()"></div>
+		</div>
+		<div class="nav-bar">
+			<ul id="nav">
+				<li id="nav-home">
+					<a data-scroll href="#home">HOME</a>
+				</li>
+				<li id="nav-about">
+					<a data-scroll href="#about">ABOUT</a>
+				</li>
+				<li id="nav-division">
+						<a data-scroll href="#division">DIVISION</a>
+					</li>
+				<li id="nav-faq">
+					<a data-scroll href="#faq">FAQ</a>
+				</li>
+				<li id="nav-register">
+					<a data-scroll href="#proposed-talks" class="border-btn">APPLY</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav-bar-mobile">
+			<svg onClick="toggleDrawer()" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+				<g>
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#FFF"></path>
+				</g>
+			</svg>
+		</div>
+	</nav>
+
+	
+	<!-- home -->
+	<div id="home" >
+		<div id="bclogo">
+			<picture>
+				<source media="(max-width: 900px)" srcset="img/homepage-600.jpg">
+				<img src="img/homepage.jpg" alt="homepage"/>
+			</picture>
+			<ul id="countdown-wrapper">
+			  <div class="wrap">  
+					<h1 class="countdown-title">Barcamp Cyberjaya X JumpStart Program</h1>
+
+
+			    <div class="countdown">
+			      <div class="bloc-time hours" data-init-value="24">
+			        <span class="count-title">Hours</span>
+
+			        <div class="figure hours hours-1">
+			          <span class="top">2</span>
+			          <span class="top-back">
+			            <span>2</span>
+			          </span>
+			          <span class="bottom">2</span>
+			          <span class="bottom-back">
+			            <span>2</span>
+			          </span>
+			        </div>
+
+			        <div class="figure hours hours-2">
+			          <span class="top">4</span>
+			          <span class="top-back">
+			            <span>4</span>
+			          </span>
+			          <span class="bottom">4</span>
+			          <span class="bottom-back">
+			            <span>4</span>
+			          </span>
+			        </div>
+			      </div>
+
+			      <div class="bloc-time min" data-init-value="0">
+			        <span class="count-title">Minutes</span>
+
+			        <div class="figure min min-1">
+			          <span class="top">0</span>
+			          <span class="top-back">
+			            <span>0</span>
+			          </span>
+			          <span class="bottom">0</span>
+			          <span class="bottom-back">
+			            <span>0</span>
+			          </span>        
+			        </div>
+
+			        <div class="figure min min-2">
+			         <span class="top">0</span>
+			          <span class="top-back">
+			            <span>0</span>
+			          </span>
+			          <span class="bottom">0</span>
+			          <span class="bottom-back">
+			            <span>0</span>
+			          </span>
+			        </div>
+			      </div>
+
+			      <div class="bloc-time sec" data-init-value="0">
+			        <span class="count-title">Seconds</span>
+
+			          <div class="figure sec sec-1">
+			          <span class="top">0</span>
+			          <span class="top-back">
+			            <span>0</span>
+			          </span>
+			          <span class="bottom">0</span>
+			          <span class="bottom-back">
+			            <span>0</span>
+			          </span>          
+			        </div>
+
+			        <div class="figure sec sec-2">
+			          <span class="top">0</span>
+			          <span class="top-back">
+			            <span>0</span>
+			          </span>
+			          <span class="bottom">0</span>
+			          <span class="bottom-back">
+			            <span>0</span>
+			          </span>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</ul>
+		</div>
+ 		<div id="slogan" class="row">
+			<div class="quoteslide">
+				<div class="quote show">"The term 'BarCamp' has nothing to do with alcohol but everything to do with high spirits - a spirit of sharing ideas in a free and fun environment." - Outlook Business</div>
+				<div class="quote">"A gathering of folk who, in one way or another, aim to make the world a better place." - Dr Koh Niak Wu</div>
+				<div class="quote">"Barcamp Cyberjaya its one amazing adhoc event where we see young mind share their idea and get it feedback with industry fellow." - Mr. Curry Khoo</div>
+			</div>
+		</div>
+
+		<div id="button" class="row">
+			<a data-scroll href="#proposed-talks" class="button">APPLY</a>
+		</div>
+	</div>
+
+	<!-- about -->
+	<div id="about" class="container white-container">
+		<div class="row">			
+ 			<h1 class="description">Unlike typical conferences, BarCamp has no preset of speakers. BarCamp is a user-generated conference that brings people together to share their passion!</h1>
+		</div>
+
+ 			<div class="row">
+ 				<div class="two-column">
+					<p>Barcamp Cyberjaya 2019<br>
+					<span class="sub">Barcamp Cyberjaya is an annual user-generated unconference with topics surrounding technology and entrepreneurships.</span></p>
+					<p><span class="sub">It is open-for-all, with no preset topics and speakers. Everyone who shows up can pick a time-room slot and write down what they would like to talk about.</span></p>
+				</div>
+
+				<div class="two-column">
+					<p>JumpStart Program<br>
+					<span class="sub">It aims to introduce the industrial side to new students as well as expose them to practical skills that could help them tackle their university life. </span></p>
+					<span class="sub">After organising several events with the industrial side in the past, IT Society is of the opinion that it is necessary to urge students to not only focus on their academics but to also get involved in co-curricular activities and side-projects (mini projects).</span>
+				</div>
+ 			</div>
+
+ 			<div>
+ 				
+ 			</div>
+
+	</div>
+
+	<!-- past barcamp photos -->
+	<div id="past" class="container">
+		<div class="slides">
+			<div class="image show"></div>
+			<div class="image"></div>
+			<div class="image"></div>
+			<a class="hover" href="http://bit.ly/bcpastphotos" target="_blank" rel="noopener">BARCAMPS 2015 &amp; 2016 PHOTOS</a>
+		</div>
+	</div>
+
+	<!-- Division -->
+	<div id="division" class="container white-container">
+			<div class="row">			
+					<h1 class="description">Division and Role</h1>
+			</div>
+	
+					<div class="row">
+						<div class="two-column">
+							<p>General Affairs<br>
+							<span class="sub">Barcamp Cyberjaya is an annual user-generated unconference with topics surrounding technology and entrepreneurships.</span></p>
+	
+							<p>Sponsorship Division<br>
+							<span class="sub">It aims to introduce the industrial side to new students as well as expose them to practical skills that could help them tackle their university life. </span></p>
+						</div>
+						
+						<div class="two-column">
+							<p>Publicity and Creativity Division<br>
+							<span class="sub">Barcamp Cyberjaya is an annual user-generated unconference with topics surrounding technology and entrepreneurships.</span></p>
+
+							<p>Event Managemant Division<br>
+							<span class="sub">It aims to introduce the industrial side to new students as well as expose them to practical skills that could help them tackle their university life. </span></p>
+						</div>
+					</div>
+	
+					<div>
+						
+					</div>
+	
+	</div>
+
+	<!-- proposed talks and form -->
+	<div id="proposed-talks" class="container">
+		<div class="row">
+			<h1 class="center">Become Committee</h1>
+			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbw9briOIJEE6CMNc0AxRgfm_x7yQCOzFhmnlO-MozAZe055g6I/exec">
+				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
+				<textarea class="input" name="topic" id="topic" placeholder="What Will You Be Talking About?" required></textarea></br>
+				<button type="submit" name="submit" id="submit">SUBMIT</button>
+			</form>
+
+		</div>
+	</div>
+
+	<!-- faq -->
+	<div id="faq" class="container white-container">
+		<div class="row">
+			<h1 class="title">Frequently Asked Questions</h1>
+			<h2 class="title">What can we talk about in BarCamp?</h2>
+			<p>Speakers are encouraged to conduct sessions that are related to technology, entrepreneurship, and education (coz we are
+				in Cyberjaya and in university right?). But, you can also talk about any other topics that you like, as long as other
+				participants vote on it.</p>
+			<p>Speakers should refrain from touching on sensitive topics such as politics and religions.</p>
+			<h2 class="title">How many tracks are there, and how long is each session?</h2>
+			<p>There will be 5 simultaneous tracks. Each session will be roughly 45 minutes long.</p>
+			<h2 class="title">What equipment is there at the venues and what do I need to bring?</h2>
+			<p>Each MMU FCI classroom is equipped with:</p>
+			<ul>
+				<li>VGA Projector</li>
+				<li>WiFi Access Point</li>
+				<li>Power socket</li>
+				<li>Whiteboard and markers</li>
+			</ul>
+			<p>If your device (such as MacBook or iPads) does not have VGA output, please bring your own VGA adapter.</p>
+			<h2 class="title">And foods?</h2>
+			<p>There will be free Halal lunch provided. Also, if you signed up as a vegan, we will do our best to make it easy for you.</p>
+		</div>
+	</div> 	
+
+	<footer class="white-container-container">
+		<div class="row">
+			<div class="center">
+				Organised by <b><a href="https://www.itsociety.rocks/" target="_blank" rel="noopener">IT Society</a></b>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		/*
+		* Count down
+		*/
+		/* --------------------------
+		 * GLOBAL VARS
+		 * -------------------------- */
+		// The date you want to count down to
+		var targetDate = new Date("2019/12/25 00:00:00");   
+
+		// Other date related variables
+		var days;
+		var hrs;
+		var min;
+		var sec;
+
+		/* --------------------------
+		 * ON DOCUMENT LOAD
+		 * -------------------------- */
+		$(function() {
+		   // Calculate time until launch date
+		   timeToLaunch();
+		  // Transition the current countdown from 0 
+		  numberTransition('#days .number', days, 1000, 'easeOutQuad');
+		  numberTransition('#hours .number', hrs, 1000, 'easeOutQuad');
+		  numberTransition('#minutes .number', min, 1000, 'easeOutQuad');
+		  numberTransition('#seconds .number', sec, 1000, 'easeOutQuad');
+		  // Begin Countdown
+		  setTimeout(countDownTimer,1001);
+		});
+
+		/* --------------------------
+		 * FIGURE OUT THE AMOUNT OF 
+		   TIME LEFT BEFORE LAUNCH
+		 * -------------------------- */
+		function timeToLaunch(){
+		    // Get the current date
+		    var currentDate = new Date();
+
+		    // Find the difference between dates
+		    var diff = (currentDate - targetDate)/1000;
+		    var diff = Math.abs(Math.floor(diff));  
+
+		    // Check number of days until target
+		    days = Math.floor(diff/(24*60*60));
+		    sec = diff - days * 24*60*60;
+
+		    // Check number of hours until target
+		    hrs = Math.floor(sec/(60*60));
+		    sec = sec - hrs * 60*60;
+
+		    // Check number of minutes until target
+		    min = Math.floor(sec/(60));
+		    sec = sec - min * 60;
+		}
+
+		/* --------------------------
+		 * DISPLAY THE CURRENT 
+		   COUNT TO LAUNCH
+		 * -------------------------- */
+		function countDownTimer(){ 
+		    
+		    // Figure out the time to launch
+		    timeToLaunch();
+		    
+		    // Write to countdown component
+		    $( "#days .number" ).text(days);
+		    $( "#hours .number" ).text(hrs);
+		    $( "#minutes .number" ).text(min);
+		    $( "#seconds .number" ).text(sec);
+		    
+		    // Repeat the check every second
+		    setTimeout(countDownTimer,1000);
+		}
+
+		/* --------------------------
+		 * TRANSITION NUMBERS FROM 0
+		   TO CURRENT TIME UNTIL LAUNCH
+		 * -------------------------- */
+		function numberTransition(id, endPoint, transitionDuration, transitionEase){
+		  // Transition numbers from 0 to the final number
+		  $({numberCount: $(id).text()}).animate({numberCount: endPoint}, {
+		      duration: transitionDuration,
+		      easing:transitionEase,
+		      step: function() {
+		        $(id).text(Math.floor(this.numberCount));
+		      },
+		      complete: function() {
+		        $(id).text(this.numberCount);
+		      }
+		   }); 
+		};
+		/*
+		* Default css
+		*/
+		var slides = document.querySelectorAll('.slides .image');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide, 2000);
+		var map;
+
+		function nextSlide() {
+			slides[currentSlide].className = 'image';
+			currentSlide = (currentSlide + 1) % slides.length;
+			slides[currentSlide].className = 'image show';
+		}
+
+		var quoteslide = document.querySelectorAll('.quoteslide .quote');
+		var qcurrentSlide = 0;
+		var qslideInterval = setInterval(nextQuoteSlide, 4000);
+		var qmap;
+
+		function nextQuoteSlide() {
+			quoteslide[qcurrentSlide].className = 'quote';
+			qcurrentSlide = (qcurrentSlide + 1) % quoteslide.length;
+			quoteslide[qcurrentSlide].className = 'quote show';
+		}
+
+		function toggleDrawer() {
+			document.querySelector('.drawer').classList.toggle('show')
+		}
+
+		function initMap() {
+			var myLatLng = { lat: 2.9276332, lng: 101.6418755 };
+			map = new google.maps.Map(document.getElementById('maps'), {
+				center: myLatLng,
+				scrollwheel: false,
+				zoom: 16
+			});
+
+			var marker = new google.maps.Marker({
+				map: map,
+				position: myLatLng,
+				title: 'Hello World!'
+			});
+		}
+		window.addEventListener('resize', function (event) {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+
+		function getFormData() {
+			var elements = document.getElementById("gform").elements;
+			var fields = Object.keys(elements).map(function (k) {
+				if (elements[k].name !== undefined) {
+					return elements[k].name;
+				} else if (elements[k].length > 0) {
+					return elements[k].item(0).name;
+				}
+			}).filter(function (item, pos, self) {
+				return self.indexOf(item) == pos && item;
+			});
+			var data = {};
+			fields.forEach(function (k) {
+				data[k] = elements[k].value;
+				if (elements[k].type === "checkbox") {
+					data[k] = elements[k].checked;
+				} else if (elements[k].length) {
+					for (var i = 0; i < elements[k].length; i++) {
+						if (elements[k].item(i).checked) {
+							data[k] = elements[k].item(i).value;
+						}
+					}
+				}
+			});
+			return data;
+		}
+
+		function handleFormSubmit(event) {
+			event.preventDefault();
+			var data = getFormData();
+			document.querySelector('#submit').innerHTML = "Loading...";
+			document.querySelector('#submit').disabled = true;
+
+			var url = event.target.action;
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', url);
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+			xhr.onreadystatechange = function () {
+				document.querySelector('#submit').innerHTML = "Form Submitted. Thank You.";
+				document.getElementById('gform').reset();
+				document.querySelector('#submit').disabled = false;
+				return;
+			};
+			var encoded = Object.keys(data).map(function (k) {
+				return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+			}).join('&')
+			xhr.send(encoded);
+		}
+		function loaded() {
+			var form = document.getElementById('gform');
+			form.addEventListener("submit", handleFormSubmit, false);
+		};
+		document.addEventListener('DOMContentLoaded', loaded, false);
+
+		smoothScroll.init();
+	</script>
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-66076187-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap" async defer></script>
+
+	<!-- Live Chat Widget -->
+	<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#E4392B" data-apps="JTdCJTIyZmFjZWJvb2slMjI6JTIyMjA2MzIyODQ5NDEyNTQ2JTIyLCUyMmVtYWlsJTIyOiUyMml0c29jLm1tdUBnbWFpbC5jb20lMjIlN0Q="></script>
+
+	<script type="text/javascript">
+		// Create Countdown
+		var Countdown = {
+		  
+		  // Backbone-like structure
+		  $el: $('.countdown'),
+		  
+		  // Params
+		  countdown_interval: null,
+		  total_seconds     : 0,
+		  
+		  // Initialize the countdown  
+		  init: function() {
+		    
+		    // DOM
+				this.$ = {
+		    	hours  : this.$el.find('.bloc-time.hours .figure'),
+		    	minutes: this.$el.find('.bloc-time.min .figure'),
+		    	seconds: this.$el.find('.bloc-time.sec .figure')
+		   	};
+
+		    // Init countdown values
+		    this.values = {
+			      hours  : this.$.hours.parent().attr('data-init-value'),
+		        minutes: this.$.minutes.parent().attr('data-init-value'),
+		        seconds: this.$.seconds.parent().attr('data-init-value'),
+		    };
+		    
+		    // Initialize total seconds
+		    this.total_seconds = this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
+
+		    // Animate countdown to the end 
+		    this.count();    
+		  },
+		  
+		  count: function() {
+		    
+		    var that    = this,
+		        $hour_1 = this.$.hours.eq(0),
+		        $hour_2 = this.$.hours.eq(1),
+		        $min_1  = this.$.minutes.eq(0),
+		        $min_2  = this.$.minutes.eq(1),
+		        $sec_1  = this.$.seconds.eq(0),
+		        $sec_2  = this.$.seconds.eq(1);
+		    
+		        this.countdown_interval = setInterval(function() {
+
+		        if(that.total_seconds > 0) {
+
+		            --that.values.seconds;              
+
+		            if(that.values.minutes >= 0 && that.values.seconds < 0) {
+
+		                that.values.seconds = 59;
+		                --that.values.minutes;
+		            }
+
+		            if(that.values.hours >= 0 && that.values.minutes < 0) {
+
+		                that.values.minutes = 59;
+		                --that.values.hours;
+		            }
+
+		            // Update DOM values
+		            // Hours
+		            that.checkHour(that.values.hours, $hour_1, $hour_2);
+
+		            // Minutes
+		            that.checkHour(that.values.minutes, $min_1, $min_2);
+
+		            // Seconds
+		            that.checkHour(that.values.seconds, $sec_1, $sec_2);
+
+		            --that.total_seconds;
+		        }
+		        else {
+		            clearInterval(that.countdown_interval);
+		        }
+		    }, 1000);    
+		  },
+		  
+		  animateFigure: function($el, value) {
+		    
+		     var that         = this,
+				     $top         = $el.find('.top'),
+		         $bottom      = $el.find('.bottom'),
+		         $back_top    = $el.find('.top-back'),
+		         $back_bottom = $el.find('.bottom-back');
+
+		    // Before we begin, change the back value
+		    $back_top.find('span').html(value);
+
+		    // Also change the back bottom value
+		    $back_bottom.find('span').html(value);
+
+		    // Then animate
+		    TweenMax.to($top, 0.8, {
+		        rotationX           : '-180deg',
+		        transformPerspective: 300,
+			      ease                : Quart.easeOut,
+		        onComplete          : function() {
+
+		            $top.html(value);
+
+		            $bottom.html(value);
+
+		            TweenMax.set($top, { rotationX: 0 });
+		        }
+		    });
+
+		    TweenMax.to($back_top, 0.8, { 
+		        rotationX           : 0,
+		        transformPerspective: 300,
+			      ease                : Quart.easeOut, 
+		        clearProps          : 'all' 
+		    });    
+		  },
+		  
+		  checkHour: function(value, $el_1, $el_2) {
+		    
+		    var val_1       = value.toString().charAt(0),
+		        val_2       = value.toString().charAt(1),
+		        fig_1_value = $el_1.find('.top').html(),
+		        fig_2_value = $el_2.find('.top').html();
+
+		    if(value >= 10) {
+
+		        // Animate only if the figure has changed
+		        if(fig_1_value !== val_1) this.animateFigure($el_1, val_1);
+		        if(fig_2_value !== val_2) this.animateFigure($el_2, val_2);
+		    }
+		    else {
+
+		        // If we are under 10, replace first figure with 0
+		        if(fig_1_value !== '0') this.animateFigure($el_1, 0);
+		        if(fig_2_value !== val_1) this.animateFigure($el_2, val_1);
+		    }    
+		  }
+		};
+
+		// Let's go !
+		Countdown.init();
+	</script>
+</body>
+</html>

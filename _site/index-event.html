@@ -1,0 +1,593 @@
+<!--
+@license
+Copyright 2017 Peh Shu Wei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BarCamp Cyberjaya 2017</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="img/favicon.ico" rel="shortcut icon">
+	<meta charset="UTF-8">
+	<meta content="BarCamp Cyberjaya 2017" property="og:title">
+	<meta content="https://www.barcampcyberjaya.org/" property="og:url">
+	<meta content="https://www.barcampcyberjaya.org/img/opengraphimg.jpg" property="og:image">
+	<meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2017." property="og:description">
+	<meta name="theme-color" content="#07223D">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Event",
+			"name": "BarCamp Cyberjaya 2017",
+			"startDate" : "2017-08-05T09:00+0800",
+			"endDate" : "2017-08-05T18:00+0800",
+			"url" : "https://www.barcampcyberjaya.org/",
+			"location" : {
+				"@type" : "Place",
+				"sameAs" : "http://fci.mmu.edu.my",
+				"name" : "Faculty of Computing & Informatics",
+				"address" : "Multimedia University, Persiaran Multimedia, 63100 Cyberjaya, Selangor"
+			},
+			"description": "Unconference that focuses on technology, programming, and entrepreneurship.",
+			"image": "https://www.barcampcyberjaya.org/img/opengraphimg.jpg"
+		}
+	</script>
+	<script src="js/smooth-scroll.js"></script>
+</head>
+
+<body>
+	<!-- navigation -->
+	<nav class="page_scroll">
+		<div class="drawer">
+			<div class="drawer-container">
+				<a data-scroll href="#home" onClick="toggleDrawer()">Home</a>
+				<a data-scroll href="#about" onClick="toggleDrawer()">About</a>
+				<a data-scroll href="#venue" onClick="toggleDrawer()">Venue</a>
+				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Topics</a>
+				<a data-scroll href="#agenda" onClick="toggleDrawer()">Agenda</a>
+				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
+				<a data-scroll href="#sponsors" onClick="toggleDrawer()">Sponsors</a>
+				<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" onClick="toggleDrawer()" rel="noopener">Register</a>
+			</div>
+			<div class="scrim" onClick="toggleDrawer()"></div>
+		</div>
+		<div class="nav-bar">
+			<ul id="nav">
+				<li id="nav-home">
+					<a data-scroll href="#home">HOME</a>
+				</li>
+				<li id="nav-about">
+					<a data-scroll href="#about">ABOUT</a>
+				</li>
+				<li id="nav-venue">
+					<a data-scroll href="#venue">VENUE</a>
+				</li>
+				<li id="nav-proposed-talks">
+					<a data-scroll href="#proposed-talks">TOPICS</a>
+				</li>
+				<li id="nav-agenda">
+					<a data-scroll href="#agenda">AGENDA</a>
+				</li>
+				<li id="nav-faq">
+					<a data-scroll href="#faq">FAQ</a>
+				</li>
+				<li id="nav-sponsor">
+					<a data-scroll href="#sponsors">SPONSORS</a>
+				</li>
+				<li id="nav-register">
+					<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" rel="noopener" class="border-btn">REGISTER</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav-bar-mobile">
+			<svg onClick="toggleDrawer()" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+				<g>
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#FFF"></path>
+				</g>
+			</svg>
+		</div>
+	</nav>
+
+	
+	<!-- home -->
+	<div id="home" >
+		<div id="bclogo">
+			<picture>
+				<source media="(max-width: 900px)" srcset="img/homepage-600.jpg">
+				<img src="img/homepage.jpg" alt="homepage"/>
+			</picture>
+		</div>
+ 		<div id="slogan" class="row">
+			<div class="quoteslide">
+				<div class="quote show">"The term 'BarCamp' has nothing to do with alcohol but everything to do with high spirits - a spirit of sharing ideas in a free and fun environment." - Outlook Business</div>
+				<div class="quote">"A gathering of folk who, in one way or another, aim to make the world a better place." - Dr Koh Niak Wu</div>
+				<div class="quote">"Barcamp Cyberjaya its one amazing adhoc event where we see young mind share their idea and get it feedback with industry fellow." - Mr. Curry Khoo</div>
+			</div>
+		</div>
+
+		<div id="button" class="row">
+			<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" rel="noopener" class="button">REGISTER</a>
+		</div>
+	</div>
+
+	<!-- about -->
+	<div id="about" class="container white-container">
+		<div class="row">			
+ 			<h1 class="description">Unlike typical conferences, BarCamp has no preset of speakers. BarCamp is a user-generated conference that brings people together to share their passion!</h1>
+		</div>
+
+ 			<div class="row">
+ 				<div class="two-column">
+					<p>You can choose to be an audience or speaker.<br>
+					<span class="sub">You are welcome to share your knowledge or experiences. Speakers are encouraged to talk about technology, entrepreneurship, education or any other topics as long as it does not touch sensitive topics like politics and religions.</span></p>
+					
+					<p>You can choose who get to speak.<br>
+					<span class="sub">Voting session will be held for proposed topics.</span></p>
+
+					<p>You can choose which talks to attend.<br>
+					<span class="sub">Multiple talks will be held on the same timetrack, choose the one you like! You are encourage to leave the session quietly if that is not something you interested with.</span></p>
+
+					<p class="sub">That means, the speaker lineup is generated by everyone who comes(including you) on that day itself. We can't wait to see what everyone will share and learn in this BarCamp!</p>
+				</div>
+
+				<div class="two-column">
+					<p>Talks Awards<br>
+					<span class="sub">Cash voucher will be given out for the top 3 speakers! Not a competition but to encourage participants to share their knowledge or experiences!</span></p>
+
+					<p>Boardgames.<br>
+					<span class="sub">None of the talks interest you? Stay in the lobby and play boardgames!</span></p>
+
+					<p>No worry about money.<br>
+					<span class="sub">Registration is FREE! Lunch, tea-time and water are provided! Tshirt will be given to those who registered earlier!</span></p>	
+
+					<p>What is more?<br>
+					<span class="sub">There is LUCKYDRAW for participants this year! Arduino Beginner Kits and power banks will be given out!</span></p>
+				</div>
+ 			</div>
+
+ 			<div>
+ 				
+ 			</div>
+
+	</div>
+
+	<!-- venue -->
+	<div id="venue" class="container">
+		<div class="row">
+			<h1>Venue</h1>
+			<div id="maps"></div>
+		</div>
+
+		<div class="row">
+			<div id="public" class="two-column">
+				<h2>Public Transport</h2>
+				<ol>
+					<li>Take KLIA Transit to <b>Putrajaya/Cyberjaya</b> station.</li>
+					<li>Take taxi to Multimedia University Faculty of Computing and Informatics, or</li>
+					<li>Take the bus Nadi Putra 520 to MMU.</li>
+				</ol>
+			</div>
+			<div id="driving" class="two-column">
+				<h2>Driving</h2>
+				<ol>
+					<li>Just find MMU Cyberjaya on your navigation app.</li>
+					<li>Once you are inside there will be road signs showing you where to park!</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<!-- past barcamp photos -->
+	<div id="past" class="container">
+		<div class="slides">
+			<div class="image show"></div>
+			<div class="image"></div>
+			<div class="image"></div>
+			<a class="hover" href="http://bit.ly/bcpastphotos" target="_blank" rel="noopener">BARCAMPS 2015 &amp; 2016 PHOTOS</a>
+		</div>
+	</div>
+
+	<!-- proposed talks and form -->
+	<div id="proposed-talks" class="container">
+		<div class="row">
+			<h1 class="center">I Want To Give A Talk</h1>
+			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbw9briOIJEE6CMNc0AxRgfm_x7yQCOzFhmnlO-MozAZe055g6I/exec">
+				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
+				<textarea class="input" name="topic" id="topic" placeholder="What Will You Be Talking About?" required></textarea></br>
+				<button type="submit" name="submit" id="submit">SUBMIT</button>
+				<div class="center">
+					<p class="small">Just to let others know what topic you are going to propose during the event day and to avoid repetition of topics</p>
+					<div id="view">
+						<a href="https://goo.gl/Q1Smg8" target="_blank" rel="noopener">VIEW PROPOSED TOPICS</a>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+	<!-- agenda -->
+	<div id="agenda" class="container white-container">
+		<div class="row ">
+			<h1 class="title">Agenda</h1>
+			<div class="agenda">
+				<!-- 1100AM -->
+				<div class="agenda-row">
+					<div class="agenda-time">11<small>00AM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Registration, Lunch, Propose Topic, Voting</div>
+							<div class="agenda-room">HALL</div>
+						</div>
+					</div>
+				</div>
+				<!-- 1215PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">12<small>15PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">The World is Recognized by the Power of Computer Vision <b>by Affian (Pian)</b></div>
+							<div class="agenda-room">Room #1 - CR1001</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">How to Grow A Startup and The Reality of it Story From Fave Malaysia formerly Groupon Msia <b>by Jeff Cheok</b></div>
+							<div class="agenda-room">Room #2 - CR1002</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">Intro to Hilti and Mobile Apps Competence Centre <b>by Leon Teh</b></div>
+							<div class="agenda-room">Room #3 - CR1003</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0100PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">01<small>00PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Building a better web with Web Components and Polymer 2.0 <b>by Henry Lim, Co-Organizer @ GDGKL</b><small><a href="https://docs.google.com/presentation/d/1PCG_oG4z5XG4RBaDa0L5UVHvQDtJgoJn30fpBQNYS0I/pub?slide=id.g22f54c2e76_0_23" target="_blank" rel="noopener">- slide</a></small></div>
+							<div class="agenda-room">Room #1 - CR1001</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">Life sucks ! Be a fxxx tech Entrepreneur <b>by Dr. Ganesan Velayathan</b></div>
+							<div class="agenda-room">Room #2 - CR1002</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">HOW I FAILED ALMOST ALL CODING JOB INTERVIEW IN PRC, HK, SG <b>by Anonoz</b><small><a href="https://gist.github.com/anonoz/5e7bd09ac3d1c521827deed33d665b5f" target="_blank" rel="noopener">- slide</a></small></div>
+							<div class="agenda-room">Room #3 - CR1003</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0145PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">01<small>45PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Deep Learning: Building food classification using Convolutional Neural Network <b>by Jack Goh</b><small><a href="jack-slide.pdf" target="_blank" rel="noopener">- slide</a></small></div>
+							<div class="agenda-room">Room #1 - CR1001</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">Startup 101: Selling a Product <b>by Jeff Cheok</b></div>
+							<div class="agenda-room">Room #2 - CR1002</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">BUILD YOUR OWN BITCOIN <b>by Tom Molesworth</b></div>
+							<div class="agenda-room">Room #3 - CR1003</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0230PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">02<small>30PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Tea break, Propose Topic, Voting</div>
+							<div class="agenda-room">HALL</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0315PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">03<small>15PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">How Can You Make Incredeble Photos and Videos <b>by Jacky Kong Jun Kit</b></div>
+							<div class="agenda-room">Room #1 - CR1001</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">ZFS: A Filesystem That you Want! Part 1 <b>by Chong Jin Yi</b></div>
+							<div class="agenda-room">Room #2 - CR1002</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">Continous Integrete Your Application <b>by Lim Gim Yong</b></div>
+							<div class="agenda-room">Room #3 - CR1003</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0400PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">04<small>00PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Keeping Your Data Safe <b>by Ivan Tham Jun Hoe</b></div>
+							<div class="agenda-room">Room #1 - CR1001</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">YOU(yes you) are just a monkey. Unless..... <b>by Willie Poh</b></div>
+							<div class="agenda-room">Room #2 - CR1002</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">Hacking CGPA in University - Tips & Tricks <b>by Hafridz</b></div>
+							<div class="agenda-room">Room #3 - CR1003</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0445PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">04<small>45PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">EDM Life: The Basics of Eletronic Music Production <b>by Lee Boon Kong</b></div>
+							<div class="agenda-room">Room #1 - CR1001</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">My Experience in a Big Corporate that try to be a Startup <b>by Shaun Goh Zhe Hong</b></div>
+							<div class="agenda-room">Room #2 - CR1002</div>
+						</div>
+						<div class="agenda-item">
+							<div class="agenda-title">ZFS: A Filesystem That you Want! Part 2 <b>by Chong Jin Yi</b></div>
+							<div class="agenda-room">Room #3 - CR1003</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0530PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">05<small>30PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Talks Awards voting</div>
+							<div class="agenda-room">HALL</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0545PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">05<small>45PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Lightning talks</div>
+							<div class="agenda-room">HALL</div>
+						</div>
+					</div>
+				</div>
+				<!-- 0545PM -->
+				<div class="agenda-row">
+					<div class="agenda-time">06<small>00PM</small></div>
+					<div class=agenda-items>
+						<div class="agenda-item">
+							<div class="agenda-title">Lucky Draw, Talk Awards, Closing</div>
+							<div class="agenda-room">HALL</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- faq -->
+	<div id="faq" class="container">
+		<div class="row">
+			<h1>Frequently Asked Questions</h1>
+			<h2 class="highlight">What can we talk about in BarCamp?</h2>
+			<p>Speakers are encouraged to conduct sessions that are related to technology, entrepreneurship, and education (coz we are
+				in Cyberjaya and in university right?). But, you can also talk about any other topics that you like, as long as other
+				participants vote on it.</p>
+			<p>Speakers should refrain from touching on sensitive topics such as politics and religions.</p>
+			<h2 class="highlight">How many tracks are there, and how long is each session?</h2>
+			<p>There will be 5 simultaneous tracks. Each session will be roughly 45 minutes long.</p>
+			<h2 class="highlight">What equipment is there at the venues and what do I need to bring?</h2>
+			<p>Each MMU FCI classroom is equipped with:</p>
+			<ul>
+				<li>VGA Projector</li>
+				<li>WiFi Access Point</li>
+				<li>Power socket</li>
+				<li>Whiteboard and markers</li>
+			</ul>
+			<p>If your device (such as MacBook or iPads) does not have VGA output, please bring your own VGA adapter.</p>
+			<h2 class="highlight">And foods?</h2>
+			<p>There will be free Halal lunch provided. Also, if you signed up as a vegan, we will do our best to make it easy for you.</p>
+		</div>
+	</div>
+
+	<!-- sponsors & partners -->
+	<div id="sponsors" class="container">
+		<!-- sponsor title -->
+		<div class="row">
+			<h1 class="title center">Sponsors</h1>
+		</div>
+		<!-- sponsors logo -->
+		<div class="row logo-list">
+			<!-- PLATINUM -->
+			<!-- Binary.com -->
+			<div class="logo">
+				<a href="https://www.binary.com" target="_blank" rel="noopener"><img src="img/binary.com.png"/></a>
+			</div>
+			<!-- 123RF Technology -->
+			<div class="logo">
+				<a href="https://www.123rf.com/" target="_blank" rel="noopener"><img src="img/123rf.png"/></a>
+			</div>
+			<!-- SEEK Asia -->
+			<div class="logo">
+				<a href="http://www.seekasia.com/" target="_blank" rel="noopener"><img src="img/seekasia.png"/></a>
+			</div>
+			<!-- GOLD -->
+			<!-- Cyberview -->
+			<div class="logo">
+				<a href="http://cyberview.com.my/" target="_blank" rel="noopener"><img src="img/cyberview.png"/></a>
+			</div>
+			<!--Werebits -->
+			<div class="logo">
+				<a href="https://werebits.com/" target="_blank" rel="noopener"><img src="img/werebits.png"/></a>
+			</div>
+			<!-- ServiceRocket -->
+			<div class="logo">
+				<a href="https://www.servicerocket.com/" target="_blank" rel="noopener"><img src="img/servicerocket.png"/></a>
+			</div>
+			<!-- Hilti -->
+			<div class="logo">
+				<a href="https://www.hilti.group/" target="_blank" rel="noopener"><img src="img/hilti.png"/></a>
+			</div>
+			<!-- Chumbaka -->
+			<div class="logo">
+				<a href="http://www.chumbaka.asia/" target="_blank" rel="noopener"><img src="img/chumbaka.png"/></a>
+			</div>
+			<!-- Sanppymob -->
+			<div class="logo">
+				<a href="https://www.snappymob.com/" target="_blank" rel="noopener"><img src="img/snappymob.png"/></a>
+			</div>
+			<!-- Cytron -->
+			<div class="logo">
+				<a href="https://www.cytron.com.my/" target="_blank" rel="noopener"><img src="img/cytron.png"/></a>
+			</div>
+
+		</div>
+		<!-- partner title -->
+		<div class="row">
+			<h1 class="title center">Media Partners</h1>
+		</div>
+		<!-- partners logo -->
+		<div class="row logo-list">
+			<div class="logo">
+				<a href="http://radio.mmu.edu.my/" target="_blank" rel="noopener"><img src="img/radiommu.png"/></a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="white-container-container">
+		<div class="row">
+			<div class="center">
+				Organised by <b><a href="https://www.itsociety.rocks/" target="_blank" rel="noopener">IT Society</a></b>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('.slides .image');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide, 2000);
+		var map;
+
+		function nextSlide() {
+			slides[currentSlide].className = 'image';
+			currentSlide = (currentSlide + 1) % slides.length;
+			slides[currentSlide].className = 'image show';
+		}
+
+		var quoteslide = document.querySelectorAll('.quoteslide .quote');
+		var qcurrentSlide = 0;
+		var qslideInterval = setInterval(nextQuoteSlide, 4000);
+		var qmap;
+
+		function nextQuoteSlide() {
+			quoteslide[qcurrentSlide].className = 'quote';
+			qcurrentSlide = (qcurrentSlide + 1) % quoteslide.length;
+			quoteslide[qcurrentSlide].className = 'quote show';
+		}
+
+		function toggleDrawer() {
+			document.querySelector('.drawer').classList.toggle('show')
+		}
+
+		function initMap() {
+			var myLatLng = { lat: 2.9276332, lng: 101.6418755 };
+			map = new google.maps.Map(document.getElementById('maps'), {
+				center: myLatLng,
+				scrollwheel: false,
+				zoom: 16
+			});
+
+			var marker = new google.maps.Marker({
+				map: map,
+				position: myLatLng,
+				title: 'Hello World!'
+			});
+		}
+		window.addEventListener('resize', function (event) {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+
+		function getFormData() {
+			var elements = document.getElementById("gform").elements;
+			var fields = Object.keys(elements).map(function (k) {
+				if (elements[k].name !== undefined) {
+					return elements[k].name;
+				} else if (elements[k].length > 0) {
+					return elements[k].item(0).name;
+				}
+			}).filter(function (item, pos, self) {
+				return self.indexOf(item) == pos && item;
+			});
+			var data = {};
+			fields.forEach(function (k) {
+				data[k] = elements[k].value;
+				if (elements[k].type === "checkbox") {
+					data[k] = elements[k].checked;
+				} else if (elements[k].length) {
+					for (var i = 0; i < elements[k].length; i++) {
+						if (elements[k].item(i).checked) {
+							data[k] = elements[k].item(i).value;
+						}
+					}
+				}
+			});
+			return data;
+		}
+
+		function handleFormSubmit(event) {
+			event.preventDefault();
+			var data = getFormData();
+			document.querySelector('#submit').innerHTML = "Loading...";
+			document.querySelector('#submit').disabled = true;
+
+			var url = event.target.action;
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', url);
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+			xhr.onreadystatechange = function () {
+				document.querySelector('#submit').innerHTML = "Form Submitted. Thank You.";
+				document.getElementById('gform').reset();
+				document.querySelector('#submit').disabled = false;
+				return;
+			};
+			var encoded = Object.keys(data).map(function (k) {
+				return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+			}).join('&')
+			xhr.send(encoded);
+		}
+		function loaded() {
+			var form = document.getElementById('gform');
+			form.addEventListener("submit", handleFormSubmit, false);
+		};
+		document.addEventListener('DOMContentLoaded', loaded, false);
+
+		smoothScroll.init();
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap" async defer></script>
+
+	<!-- Live Chat Widget -->
+	<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#E4392B" data-apps="JTdCJTIyZmFjZWJvb2slMjI6JTIyMjA2MzIyODQ5NDEyNTQ2JTIyLCUyMmVtYWlsJTIyOiUyMml0c29jLm1tdUBnbWFpbC5jb20lMjIlN0Q="></script>
+</body>
+</html>

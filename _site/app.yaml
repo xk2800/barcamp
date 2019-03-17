@@ -1,0 +1,30 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+  expiration: "0m"
+
+- url: /img/(.+)
+  static_files: img/\1  
+  upload: img/(.*)
+
+- url: /style/(.+)
+  static_files: style/\1  
+  upload: style/(.*)
+
+- url: /js/(.+)
+  static_files: js/\1  
+  upload: js/(.*)
+
+
+- url: /js/(.+)
+  static_files: js/\1  
+  upload: pdf/(.*)
+
+- url: /jack-slide.pdf
+  static_files: jack-slide.pdf
+  upload: jack-slide.pdf

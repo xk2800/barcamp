@@ -14,21 +14,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BarCamp Cyberjaya 2017</title>
+	<title>BarCamp Cyberjaya 2019</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 	<link href="img/favicon.ico" rel="shortcut icon">
 	<meta charset="UTF-8">
-	<meta content="BarCamp Cyberjaya 2017" property="og:title">
+	<meta content="BarCamp Cyberjaya 2019" property="og:title">
 	<meta content="https://www.barcampcyberjaya.org/" property="og:url">
 	<meta content="https://www.barcampcyberjaya.org/img/opengraphimg.jpg" property="og:image">
-	<meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2017." property="og:description">
+	<meta content="BarCamp is a user-generated unconference focused around technology. They are open, participatory workshop-events, the content of which is provided by participants. Happening on 5th August 2019." property="og:description">
 	<meta name="theme-color" content="#07223D">
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
 			"@type": "Event",
-			"name": "BarCamp Cyberjaya 2017",
+			"name": "BarCamp Cyberjaya 2019",
 			"startDate" : "2017-08-05T09:00+0800",
 			"endDate" : "2017-08-05T18:00+0800",
 			"url" : "https://www.barcampcyberjaya.org/",
@@ -267,9 +267,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<div id="proposed-talks" class="container">
 		<div class="row">
 			<h1 class="center">Become Committee</h1>
-			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbw9briOIJEE6CMNc0AxRgfm_x7yQCOzFhmnlO-MozAZe055g6I/exec">
+			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbxEXotfMRgSIk3KsUE9ETDLLY6cMl5MMHhumTdaDhD5wH2Nk5Ih/exec">
 				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
-				<textarea class="input" name="topic" id="topic" placeholder="What Will You Be Talking About?" required></textarea></br>
+				<input class="input" type="text" name="student_id" id="student_id" placeholder="Your student id" required></input></br>
 				<button type="submit" name="submit" id="submit">SUBMIT</button>
 			</form>
 
@@ -506,15 +506,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 		smoothScroll.init();
 	</script>
-	<!-- Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66076187-3"></script>
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-		ga('create', 'UA-66076187-3', 'auto');
-		ga('send', 'pageview');
+		gtag('config', 'UA-66076187-3');
 	</script>
 	
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap" async defer></script>

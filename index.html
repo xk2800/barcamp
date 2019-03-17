@@ -103,8 +103,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 			    <div class="countdown">
-			      <div class="bloc-time hours" data-init-value="24">
-			        <span class="count-title">Hours</span>
+			      <div class="bloc-time hours" data-init-value="0">
+			        <span class="count-title">DAYS</span>
 
 			        <div class="figure hours hours-1">
 			          <span class="top">2</span>
@@ -130,7 +130,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			      </div>
 
 			      <div class="bloc-time min" data-init-value="0">
-			        <span class="count-title">Minutes</span>
+			        <span class="count-title">HOURS</span>
 
 			        <div class="figure min min-1">
 			          <span class="top">0</span>
@@ -156,7 +156,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			      </div>
 
 			      <div class="bloc-time sec" data-init-value="0">
-			        <span class="count-title">Seconds</span>
+			        <span class="count-title">MINUTUES</span>
 
 			          <div class="figure sec sec-1">
 			          <span class="top">0</span>
@@ -310,79 +310,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</footer>
 
 	<script type="text/javascript">
-		/*
-		* Count down
-		*/
-		/* --------------------------
-		 * GLOBAL VARS
-		 * -------------------------- */
-		// The date you want to count down to
-		var targetDate = new Date("2019/12/25 00:00:00");   
-
-		// Other date related variables
-		var days;
-		var hrs;
-		var min;
-		var sec;
-
-		/* --------------------------
-		 * ON DOCUMENT LOAD
-		 * -------------------------- */
-		$(function() {
-		   // Calculate time until launch date
-		   timeToLaunch();
-		  // Transition the current countdown from 0 
-		  numberTransition('#days .number', days, 1000, 'easeOutQuad');
-		  numberTransition('#hours .number', hrs, 1000, 'easeOutQuad');
-		  numberTransition('#minutes .number', min, 1000, 'easeOutQuad');
-		  numberTransition('#seconds .number', sec, 1000, 'easeOutQuad');
-		  // Begin Countdown
-		  setTimeout(countDownTimer,1001);
-		});
-
-		/* --------------------------
-		 * FIGURE OUT THE AMOUNT OF 
-		   TIME LEFT BEFORE LAUNCH
-		 * -------------------------- */
-		function timeToLaunch(){
-		    // Get the current date
-		    var currentDate = new Date();
-
-		    // Find the difference between dates
-		    var diff = (currentDate - targetDate)/1000;
-		    var diff = Math.abs(Math.floor(diff));  
-
-		    // Check number of days until target
-		    days = Math.floor(diff/(24*60*60));
-		    sec = diff - days * 24*60*60;
-
-		    // Check number of hours until target
-		    hrs = Math.floor(sec/(60*60));
-		    sec = sec - hrs * 60*60;
-
-		    // Check number of minutes until target
-		    min = Math.floor(sec/(60));
-		    sec = sec - min * 60;
-		}
-
-		/* --------------------------
-		 * DISPLAY THE CURRENT 
-		   COUNT TO LAUNCH
-		 * -------------------------- */
-		function countDownTimer(){ 
-		    
-		    // Figure out the time to launch
-		    timeToLaunch();
-		    
-		    // Write to countdown component
-		    $( "#days .number" ).text(days);
-		    $( "#hours .number" ).text(hrs);
-		    $( "#minutes .number" ).text(min);
-		    $( "#seconds .number" ).text(sec);
-		    
-		    // Repeat the check every second
-		    setTimeout(countDownTimer,1000);
-		}
 
 		/* --------------------------
 		 * TRANSITION NUMBERS FROM 0
@@ -429,26 +356,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		function toggleDrawer() {
 			document.querySelector('.drawer').classList.toggle('show')
 		}
-
-		function initMap() {
-			var myLatLng = { lat: 2.9276332, lng: 101.6418755 };
-			map = new google.maps.Map(document.getElementById('maps'), {
-				center: myLatLng,
-				scrollwheel: false,
-				zoom: 16
-			});
-
-			var marker = new google.maps.Marker({
-				map: map,
-				position: myLatLng,
-				title: 'Hello World!'
-			});
-		}
-		window.addEventListener('resize', function (event) {
-			var center = map.getCenter();
-			google.maps.event.trigger(map, "resize");
-			map.setCenter(center);
-		});
 
 		function getFormData() {
 			var elements = document.getElementById("gform").elements;
@@ -515,12 +422,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 		gtag('config', 'UA-66076187-3');
 	</script>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U8DF1DFRqo-SbXZzcZ6rL0qzmOK57lA&callback=initMap" async defer></script>
 
 	<!-- Live Chat Widget -->
 	<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#E4392B" data-apps="JTdCJTIyZmFjZWJvb2slMjI6JTIyMjA2MzIyODQ5NDEyNTQ2JTIyLCUyMmVtYWlsJTIyOiUyMml0c29jLm1tdUBnbWFpbC5jb20lMjIlN0Q="></script>
 
+	<!-- Count down script -->
 	<script type="text/javascript">
 		// Create Countdown
 		var Countdown = {
@@ -542,15 +448,53 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		    	seconds: this.$el.find('.bloc-time.sec .figure')
 		   	};
 
+				 
+				var targetDate = new Date("2019/6/25 00:00:00");   
+
+				// Other date related variables
+				var hrs;
+				var min;
+				var sec;
+
+				/* --------------------------
+				* FIGURE OUT THE AMOUNT OF 
+					TIME LEFT BEFORE LAUNCH
+				* -------------------------- */
+				// Get the current date
+				var currentDate = new Date();
+
+				// Find the difference between dates
+				var diff = (currentDate - targetDate)/1000;
+				var diff = Math.abs(Math.floor(diff));  
+
+				// Check number of days until target
+				days = Math.floor(diff/(24*60*60));
+				sec = diff - days * 24*60*60;
+
+				// Check number of hours until target
+				hrs = Math.floor(sec/(60*60));
+				sec = sec - hrs * 60*60;
+
+				// Check number of minutes until target
+				min = Math.floor(sec/(60));
+				sec = sec - min * 60;
+
 		    // Init countdown values
-		    this.values = {
-			      hours  : this.$.hours.parent().attr('data-init-value'),
-		        minutes: this.$.minutes.parent().attr('data-init-value'),
-		        seconds: this.$.seconds.parent().attr('data-init-value'),
+		    // this.values = {
+			  //     hours  : this.$.hours.parent().attr('data-init-value'),
+		    //     minutes: this.$.minutes.parent().attr('data-init-value'),
+		    //     seconds: this.$.seconds.parent().attr('data-init-value'),
+		    // };
+				this.values = {
+			      days  : days,
+		        hours: hrs,
+		        minutes: min,
 		    };
+
+				console.log(this.values);
 		    
 		    // Initialize total seconds
-		    this.total_seconds = this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
+		    this.total_seconds = this.values.days * 24 * 60 * 60 + (this.values.hours * 60 * 60) + (this.values.minutes * 60) + sec;
 
 		    // Animate countdown to the end 
 		    this.count();    
@@ -570,11 +514,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 		        if(that.total_seconds > 0) {
 
-		            --that.values.seconds;              
+		            --that.total_seconds;
+								console.log(that.total_seconds % 60);           
 
-		            if(that.values.minutes >= 0 && that.values.seconds < 0) {
+		            if(that.values.minutes >= 0 && that.total_seconds % 60 == 0) {
 
-		                that.values.seconds = 59;
 		                --that.values.minutes;
 		            }
 
@@ -584,20 +528,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		                --that.values.hours;
 		            }
 
+								if(that.values.days >= 0 && that.values.hours < 0) {
+
+									that.values.hours = 23;
+									--that.values.days;
+								}
+
 		            // Update DOM values
 		            // Hours
-		            that.checkHour(that.values.hours, $hour_1, $hour_2);
+		            that.checkHour(that.values.days, $hour_1, $hour_2);
 
 		            // Minutes
-		            that.checkHour(that.values.minutes, $min_1, $min_2);
+		            that.checkHour(that.values.hours, $min_1, $min_2);
 
 		            // Seconds
-		            that.checkHour(that.values.seconds, $sec_1, $sec_2);
-
-		            --that.total_seconds;
+		            that.checkHour(that.values.minutes, $sec_1, $sec_2);
 		        }
 		        else {
-		            clearInterval(that.countdown_interval);
+							clearInterval(that.countdown_interval);
 		        }
 		    }, 1000);    
 		  },
@@ -640,12 +588,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		  },
 		  
 		  checkHour: function(value, $el_1, $el_2) {
-		    
 		    var val_1       = value.toString().charAt(0),
 		        val_2       = value.toString().charAt(1),
 		        fig_1_value = $el_1.find('.top').html(),
 		        fig_2_value = $el_2.find('.top').html();
-
+						
 		    if(value >= 10) {
 
 		        // Animate only if the figure has changed

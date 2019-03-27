@@ -450,6 +450,7 @@ footer .center{
 	margin: 0 auto; }
 	.countdown-title{
 		font-family: Merriweather Sans;
+	    white-space: nowrap;
 	}
   .countdown .bloc-time {
     float: left;

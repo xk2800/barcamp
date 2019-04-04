@@ -14,7 +14,7 @@ h2{
 	font-weight: normal;
 	color: #FFF;
 }
-p, #public ol li, #driving ol li{
+#public ol li, #driving ol li{
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.6;
@@ -589,6 +589,10 @@ footer .center{
 		width: 80%;
 	}
 p, p span{
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	margin-bottom: 1.7rem;
 		position: relative;
 		margin: auto;
 		text-align: justify;

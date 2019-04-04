@@ -259,11 +259,11 @@ ul#nav li#nav-register a:hover{
 	width:100%;
 	height: 50%;
 }
-.row:after{
+/* .row:after{
 	clear: both;
 	content: "";
 	display: block;
-}
+} */
 .two-column{
 	width: 48%;
 	position: relative;

@@ -588,6 +588,9 @@ footer .center{
 		width: 80%;
 	}
 	.row > .description, p > .sub, .row > p{
+		position: relative;
+		margin: auto;
+		width: 900px;
 		text-align: justify;
 	}
 	#slogan{
@@ -598,7 +601,6 @@ footer .center{
 	}
 	 .description{
 	 	font-size: 1.5em;
-	 	text-align: center;
 	 }
 	.quoteslide {
 		padding: 20px;

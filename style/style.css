@@ -462,11 +462,9 @@ footer .center{
     display: block;
     margin-bottom: 15px;
     font: bold 0.94em Arial;
-    color: #1a1a1a;
+    color: white;
 		text-transform: uppercase; }
-		.count-title{
-			color: white;
-		}
+		
   .countdown .figure {
     position: relative;
     float: left;

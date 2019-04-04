@@ -14,7 +14,7 @@ h2{
 	font-weight: normal;
 	color: #FFF;
 }
-#public ol li, #driving ol li{
+p, #public ol li, #driving ol li{
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.6;
@@ -99,7 +99,7 @@ a{
 	color: #000;
 	font-weight: normal;
 }
-.rows, form{	
+.row, form{	
 	margin: 0px auto;
 	width: 70%;
 }
@@ -259,7 +259,7 @@ ul#nav li#nav-register a:hover{
 	width:100%;
 	height: 50%;
 }
-.rows:after{
+.row:after{
 	clear: both;
 	content: "";
 	display: block;
@@ -461,10 +461,9 @@ footer .center{
   .countdown .count-title {
     display: block;
     margin-bottom: 15px;
-    font: bold 0.94em Arial;
-    color: white;
-		text-transform: uppercase; }
-		
+    font: normal 0.94em Arial;
+    color: #1a1a1a;
+    text-transform: uppercase; }
   .countdown .figure {
     position: relative;
     float: left;
@@ -585,18 +584,8 @@ footer .center{
 		        box-sizing: border-box;
 		display: block;
 	}
-	.rows{
+	.row{
 		width: 80%;
-	}
-p, p span{
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.6;
-	margin-bottom: 1.7rem;
-		position: relative;
-		margin: auto;
-		text-align: justify;
-		border: 1px solid #000;
 	}
 	#slogan{
 		font-family: Merriweather Sans;
@@ -606,6 +595,7 @@ p, p span{
 	}
 	 .description{
 	 	font-size: 1.5em;
+	 	text-align: center;
 	 }
 	.quoteslide {
 		padding: 20px;
@@ -728,5 +718,4 @@ p, p span{
 @media screen and (max-width:768px){
 .countdown{
 	display: none;
-}
 }

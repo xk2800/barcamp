@@ -461,7 +461,7 @@ footer .center{
   .countdown .count-title {
     display: block;
     margin-bottom: 15px;
-    font: normal 0.94em Arial;
+    font: bold 0.94em Arial;
     color: #1a1a1a;
     text-transform: uppercase; }
   .countdown .figure {
@@ -586,6 +586,9 @@ footer .center{
 	}
 	.row{
 		width: 80%;
+	}
+	.row > .description, p > .sub, .row > p{
+		text-align: justify;
 	}
 	#slogan{
 		font-family: Merriweather Sans;

@@ -588,7 +588,7 @@ footer .center{
 	.row{
 		width: 80%;
 	}
-p{
+p, p span{
 		position: relative;
 		margin: auto;
 		text-align: justify;

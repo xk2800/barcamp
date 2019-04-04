@@ -99,7 +99,7 @@ a{
 	color: #000;
 	font-weight: normal;
 }
-.row, form{	
+.rows, form{	
 	margin: 0px auto;
 	width: 70%;
 }
@@ -259,11 +259,11 @@ ul#nav li#nav-register a:hover{
 	width:100%;
 	height: 50%;
 }
-/* .row:after{
+.rows:after{
 	clear: both;
 	content: "";
 	display: block;
-} */
+}
 .two-column{
 	width: 48%;
 	position: relative;
@@ -585,7 +585,7 @@ footer .center{
 		        box-sizing: border-box;
 		display: block;
 	}
-	.row{
+	.rows{
 		width: 80%;
 	}
 p, p span{

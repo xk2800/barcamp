@@ -588,10 +588,9 @@ footer .center{
 	.row{
 		width: 80%;
 	}
-	.row > .description, p > .sub, .row > p{
+p{
 		position: relative;
 		margin: auto;
-		width: 900px;
 		text-align: justify;
 		border: 1px solid #000;
 	}

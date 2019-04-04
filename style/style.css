@@ -274,6 +274,9 @@ ul#nav li#nav-register a:hover{
 	box-sizing: border-box;
 	text-align: justify;
 }
+p{
+	text-align: justify;
+}
 #venue #maps{
 	height: 380px;
 }

@@ -370,8 +370,8 @@ p{
 	width: 33%;
 }
 
-input[type="date"]:before {
-	content: "Date of Birth" !important;
+input[type="date"].placeholderclass::before {
+	content: "attr(placeholder)" !important;
 	color: #aaa;
 	margin-right: 0.5em;
 }

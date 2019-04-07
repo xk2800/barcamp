@@ -55,7 +55,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<div class="drawer-container">
 				<a data-scroll href="#home" onClick="toggleDrawer()">Home</a>
 				<a data-scroll href="#about" onClick="toggleDrawer()">About</a>
-				<a data-scroll href="#division" onClick="toggleDrawer()">Division</a>
+				<a data-scroll href="#division" onClick="toggleDrawer()">Divisions</a>
 				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
 				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Apply</a>
 			</div>
@@ -283,10 +283,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<div class="row">
 			<h1 class="center">Join Our Committee</h1>
 			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbxEXotfMRgSIk3KsUE9ETDLLY6cMl5MMHhumTdaDhD5wH2Nk5Ih/exec">
-				<input class="input" type="text" name="email" id="email" placeholder="Email" required></br>
-				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
-				<input class="input" type="text" name="student_id" id="student_id" placeholder="What is your student ID" required></input></br>
-				<input class="input" type="text" name="faculty" id="faculty" placeholder="Faculty" required></input></br>
+				<input class="input" type="text" name="email" id="email" placeholder="Enter your email" required></br>
+				<input class="input" type="text" name="name" id="name" placeholder="How should we call you?" required></br>
+				<input class="input" type="text" name="student_id" id="student_id" placeholder="What is your student ID?" required></input></br>
+				<input class="input" type="textarea" name="faculty" id="faculty" placeholder="Faculty" required></input></br>
+				<div>
+					<select class="input wrap-3" name="choice_0" id="choice_0" required>
+						<option value="" disabled selected>Select a faculty</option>
+						<option value="FCI">FCI</option>
+						<option value="FCI">FOE</option>
+						<option value="FCI">FOM</option>
+						<option value="FCI">FCM</option>
+						<option value="FCI">FAC</option>
+					</select>
+				</div>
 				<input class="input" type="date" name="birthday" id="birthday" placeholder="Date of Birth" required></input></br>
 				<input class="input" type="textarea" name="free_time" id="free_time" placeholder="How do you spend your free time?" required></input></br>	
 				<input class="input" type="textarea" name="experience" id="experience" placeholder="Briefly describe your past experience" required></input></br>
@@ -296,25 +306,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<option value="Sponsorship Division">Sponsorship Division</option>
 						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
 						<option value="Event Management Division">Event Management Division</option>
-						<option value="General Affair Division">General Affair Division</option>
+						<option value="General Affair Division">General Affairs Division</option>
 					</select>
 					<select class="input wrap-3" name="choice_2" id="choice_2" required>
 						<option value="" disabled selected>Select Second Choice</option>
 						<option value="Sponsorship Division">Sponsorship Division</option>
 						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
 						<option value="Event Management Division">Event Management Division</option>
-						<option value="General Affair Division">General Affair Division</option>
+						<option value="General Affair Division">General Affairs Division</option>
 					</select>
 					<select class="input wrap-3" name="choice_3" id="choice_3" required>
 						<option value="" disabled selected>Select Third Choice</option>
 						<option value="Sponsorship Division">Sponsorship Division</option>
 						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
 						<option value="Event Management Division">Event Management Division</option>
-						<option value="General Affair Division">General Affair Division</option>
+						<option value="General Affair Division">General Affairs Division</option>
 					</select>
 				</div>
 				<select name="interview_slot" id="interview_slot" required>
-					<option value="" disabled selected>Book your interview slot</option>
+					<option value="" disabled selected>Pick an interview slot</option>
 					<option value="15 April 8:00PM">15 April 8:00PM</option>
 					<option value="15 April 8:20PM">15 April 8:20PM</option>
 					<option value="15 April 8:40PM">15 April 8:40PM</option>

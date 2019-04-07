@@ -337,11 +337,11 @@ p{
 	color: rgba(255,255,255,1);
 	font-size: 22px;
 }
-.input, button, #view a{
+.input, button, select, #view a{
 	font-size: 1em;
 	color: #FFF;
 	width: 100%;
-	margin: 5px;
+	margin: 5px 0px;
 	border: 2px solid rgba(255, 255, 255, 0.5);
 	background-color: #07223D;
 	border-radius: 4px;
@@ -366,9 +366,23 @@ p{
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.input.wrap-3, button.wrap-3, select.wrap-3, #view a.wrap-3{
+	width: 33%;
+}
+
+input[type="date"]:before {
+	content: attr(placeholder) !important;
+	color: #aaa;
+	margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+	content: "";
+}
+
 button, #view a{
 	text-align: center;
-	margin: 15px 5px;
+	margin: 15px 0px;
 	border: 3px solid rgba(255, 255, 255, 0.5);
 	-webkit-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
@@ -728,4 +742,8 @@ footer .center{
 	.two-column{
 		width:100%;
 	}
+}
+
+.tips{
+	display: none;
 }

@@ -258,25 +258,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<!-- Division -->
 	<div id="division" class="container white-container">
-			<div class="row">			
-					<h1 class="title">Divisions</h1>
-						<div class="two-column">
-							<p>General Affairs Division<br>
-							<span class="sub">The all-purpose team that handles the internal management of the program activities and ensures that everything is in order.</span></p>
-	
-							<p>Sponsorship Division<br>
-							<span class="sub">The team that plays a vital role in ensuring that the event obtains sufficient funding in order to make the event an exciting experience for everyone.</span></p>
-						</div>
-						
-						<div class="two-column">
-							<p>Publicity and Creativity Division<br>
-							<span class="sub">The creative team that plays a role in attracting and engaging with participants of the event through print media and digital media.</span></p>
+		<div class="row">			
+			<h1 class="title">Divisions</h1>
+			<div class="two-column">
+				<p>General Affairs Division<br>
+				<span class="sub">The all-purpose team that handles the internal management of the program activities and ensures that everything is in order.</span></p>
 
-							<p>Event Management Division<br>
-							<span class="sub">The team that ensures a conducive ambience and the smooth flow of of events during the event day.</span></p>
-						</div>
-					</div>
-	
+				<p>Sponsorship Division<br>
+				<span class="sub">The team that plays a vital role in ensuring that the event obtains sufficient funding in order to make the event an exciting experience for everyone.</span></p>
+			</div>
+			
+			<div class="two-column">
+				<p>Publicity and Creativity Division<br>
+				<span class="sub">The creative team that plays a role in attracting and engaging with participants of the event through print media and digital media.</span></p>
+
+				<p>Event Management Division<br>
+				<span class="sub">The team that ensures a conducive ambience and the smooth flow of of events during the event day.</span></p>
+			</div>
+		</div>
 	</div>
 
 	<!-- proposed talks and form -->
@@ -284,12 +283,46 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<div class="row">
 			<h1 class="center">Join Our Committee</h1>
 			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbxEXotfMRgSIk3KsUE9ETDLLY6cMl5MMHhumTdaDhD5wH2Nk5Ih/exec">
-				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
 				<input class="input" type="text" name="email" id="email" placeholder="Email" required></br>
-				<input class="input" type="text" name="student_id" id="student_id" placeholder="Your student id" required></input></br>
+				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
+				<input class="input" type="text" name="student_id" id="student_id" placeholder="What is your student ID" required></input></br>
+				<input class="input" type="text" name="faculty" id="faculty" placeholder="Faculty" required></input></br>
+				<input class="input" type="date" name="birthday" id="birthday" placeholder="Date of Birth" required></input></br>
+				<input class="input" type="textarea" name="free_time" id="free_time" placeholder="How do you spend your free time?" required></input></br>	
+				<input class="input" type="textarea" name="experience" id="experience" placeholder="Briefly describe your past experience" required></input></br>
+				<div>
+					<select class="input wrap-3" name="choice_1" id="choice_1" required>
+						<option value="" disabled selected>Select First Choice</option>
+						<option value="Sponsorship Division">Sponsorship Division</option>
+						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
+						<option value="Event Management Division">Event Management Division</option>
+						<option value="General Affair Division">General Affair Division</option>
+					</select>
+					<select class="input wrap-3" name="choice_2" id="choice_2" required>
+						<option value="" disabled selected>Select Second Choice</option>
+						<option value="Sponsorship Division">Sponsorship Division</option>
+						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
+						<option value="Event Management Division">Event Management Division</option>
+						<option value="General Affair Division">General Affair Division</option>
+					</select>
+					<select class="input wrap-3" name="choice_3" id="choice_3" required>
+						<option value="" disabled selected>Select Third Choice</option>
+						<option value="Sponsorship Division">Sponsorship Division</option>
+						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
+						<option value="Event Management Division">Event Management Division</option>
+						<option value="General Affair Division">General Affair Division</option>
+					</select>
+				</div>
+				<select name="interview_slot" id="interview_slot" required>
+					<option value="" disabled selected>Book your interview slot</option>
+					<option value="15 April 8:00PM">15 April 8:00PM</option>
+					<option value="15 April 8:20PM">15 April 8:20PM</option>
+					<option value="15 April 8:40PM">15 April 8:40PM</option>
+					<option value="15 April 9:00PM">15 April 9:00PM</option>
+				</select><br/>
 				<button type="submit" name="submit" id="submit">SUBMIT</button>
+				<p id="tips"></p>
 			</form>
-
 		</div>
 	</div>
 
@@ -299,11 +332,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<h1 class="title">Frequently Asked Questions</h1>
 			<h2 class="title">What does IT Society normally do?</h2>
 			<p>
-					IT Society aims to empower students as active practitioners of information technology and to represent all FCI students. IT Society used to organizing Tech Career Days, Barcamp and some industrial trip, workshop. Visit here (Link to itsociety.rocks) to get more info
+					IT Society aims to empower students as active practitioners of information technology and to represent all FCI students. IT Society used to organizing Tech Career Days, BarCamp, industrial trips, and workshops. Visit <a target="_blank" href="itsociety.rocks">here</a> to get more info.
 			</p>
 			<h2 class="title">Why should I participating society and co-organizing event?</h2>
 			<p>
-					You may expecting to learn more absolutely cool stuff which you will not able to learn from daily classes, such as decision making, event planning, resource management. You may expecting to get connected to your senior and experienced working professional which will share their wonderful experience with you.
+					You may be expecting to learn more absolutely cool stuff which you will not learn from daily classes, such as decision making, event planning, resource management. Other than that, you may be expecting to get connected to your senior and experienced working professional which will share their wonderful experience with you.
 			</p>
 			<h2 class="title">What would I do if I join?</h2>
 			<p>
@@ -418,9 +451,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			xhr.open('POST', url);
 			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 			xhr.onreadystatechange = function () {
-				document.querySelector('#submit').innerHTML = "Form Submitted. Thank You.";
+				document.querySelector('#submit').innerHTML = "Form Submitted";
 				document.getElementById('gform').reset();
 				document.querySelector('#submit').disabled = false;
+				document.getElementById('tips').innerHTML = "Thanks for your application.<br/>We will inform you about the interview related information after we have process the application. Please take noted on your Whatsapp/Email.";
 				return;
 			};
 			var encoded = Object.keys(data).map(function (k) {
@@ -473,7 +507,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		   	};
 
 				 
-				var targetDate = new Date("2019/6/25 00:00:00");   
+				var targetDate = new Date("2019/7/13 00:00:00");   
 
 				// Other date related variables
 				var hrs;

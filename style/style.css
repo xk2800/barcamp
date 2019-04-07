@@ -362,7 +362,7 @@ p{
 	outline: none;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder, .disabled{
 	color: rgba(255, 255, 255, 0.5);
 }
 
@@ -371,7 +371,7 @@ p{
 }
 
 input[type="date"]:before {
-	content: attr(placeholder) !important;
+	content: "Date of Birth" !important;
 	color: #aaa;
 	margin-right: 0.5em;
 }

@@ -371,7 +371,7 @@ p{
 }
 
 input[type="date"].placeholderclass::before {
-	content: "attr(placeholder)" !important;
+	content: attr(placeholder);
 	color: #aaa;
 	margin-right: 0.5em;
 }

@@ -262,14 +262,20 @@ ul#nav li#nav-register a:hover{
 .row:after{
 	clear: both;
 	content: "";
-	display: block;
+	display: table;
+}
+.row{
+	width: 80%;
 }
 .two-column{
-	width: 48%;
-	position: relative;
+	width: 50%;
 	float: left;
-	margin: 24px auto;
-	padding:  10px;
+	padding: 10px 30px 10px 0;
+	box-sizing: border-box;
+	text-align: justify;
+}
+p{
+	text-align: justify;
 }
 #venue #maps{
 	height: 380px;
@@ -584,9 +590,7 @@ footer .center{
 		        box-sizing: border-box;
 		display: block;
 	}
-	.row{
-		width: 80%;
-	}
+
 	#slogan{
 		font-family: Merriweather Sans;
 		font-size: 1em;
@@ -714,8 +718,14 @@ footer .center{
 	}
 }
 
-
 @media screen and (max-width:768px){
-.countdown{
-	display: none;
+	.countdown{
+		display: none;
+	}
+	.row{
+		width:90%;
+	}
+	.two-column{
+		width:100%;
+	}
 }

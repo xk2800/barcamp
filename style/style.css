@@ -370,14 +370,13 @@ p{
 	width: 33%;
 }
 
-input[type="date"].placeholderclass::before {
+input[type="date"]::before {
 	content: attr(placeholder);
-	color: #aaa;
-	margin-right: 0.5em;
+	width: 100%;
 }
-input[type="date"]:focus:before,
-input[type="date"]:valid:before {
-	content: "";
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	display: none;
 }
 
 button, #view a{

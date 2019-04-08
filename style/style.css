@@ -367,7 +367,13 @@ p{
 }
 
 .input.wrap-3, button.wrap-3, select.wrap-3, #view a.wrap-3{
-	width: 33%;
+	width: 32.8%;
+	margin-right: -3px;
+}
+
+.input.wrap-2, button.wrap-2, select.wrap-2, #view a.wrap-2{
+	width: 49.5%;
+	margin-right: -3px;
 }
 
 input[type="date"]::before {

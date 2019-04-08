@@ -287,7 +287,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<input class="input" type="text" name="name" id="name" placeholder="How should we call you?" required></br>
 				<input class="input" type="text" name="student_id" id="student_id" placeholder="What is your student ID?" required></input></br>
 				<div>
-					<select class="input wrap-3" name="faculty" id="faculty" required>
+					<select class="input" name="faculty" id="faculty" required>
 						<option value="" disabled selected>Select your faculty</option>
 						<option value="FCI">FCI</option>
 						<option value="FOE">FOE</option>
@@ -300,43 +300,45 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<input class="input" type="textarea" name="free_time" id="free_time" placeholder="How do you spend your free time?" required></input></br>	
 				<input class="input" type="textarea" name="experience" id="experience" placeholder="Briefly describe your past experience" required></input></br>
 				<div>
+					<select class="input wrap-2" name="interview_day" id="interview_day" required>
+						<option value="" disabled selected>Interview Day</option>
+						<option value="22 April">22 April</option>
+						<option value="23 April">23 April</option>
+						<option value="24 April">24 April</option>
+					</select>
+					<select class="input wrap-2" name="interview_time" id="interview_time" required>
+						<option value="" disabled selected>Interview Time</option>
+						<option value="8:00PM">8:00PM</option>
+						<option value="8:20PM">8:20PM</option>
+						<option value="8:40PM">8:40PM</option>
+						<option value="9:00PM">9:00PM</option>
+						<option value="9:20PM">9:20PM</option>
+						<option value="9:40PM">9:40PM</option>
+					</select>
+				</div>
+				<div>
 					<select class="input wrap-3" name="choice_1" id="choice_1" required>
-						<option value="" disabled selected>Select first choice</option>
+						<option value="" disabled selected>Select First choice</option>
 						<option value="Sponsorship Division">Sponsorship Division</option>
 						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
 						<option value="Event Management Division">Event Management Division</option>
 						<option value="General Affair Division">General Affairs Division</option>
 					</select>
 					<select class="input wrap-3" name="choice_2" id="choice_2" required>
-						<option value="" disabled selected>Select second choice</option>
+						<option value="" disabled selected>Select Second choice</option>
 						<option value="Sponsorship Division">Sponsorship Division</option>
 						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
 						<option value="Event Management Division">Event Management Division</option>
 						<option value="General Affair Division">General Affairs Division</option>
 					</select>
 					<select class="input wrap-3" name="choice_3" id="choice_3" required>
-						<option value="" disabled selected>Select third choice</option>
+						<option value="" disabled selected>Select Third choice</option>
 						<option value="Sponsorship Division">Sponsorship Division</option>
 						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
 						<option value="Event Management Division">Event Management Division</option>
 						<option value="General Affair Division">General Affairs Division</option>
 					</select>
 				</div>
-				<select name="interview_day" id="interview_day" required>
-					<option value="" disabled selected>Interview Day</option>
-					<option value="22 April">22 April</option>
-					<option value="23 April">23 April</option>
-					<option value="24 April">24 April</option>
-				</select><br/>
-				<select name="interview_time" id="interview_time" required>
-					<option value="" disabled selected>Interview Time</option>
-					<option value="8:00PM">8:00PM</option>
-					<option value="8:20PM">8:20PM</option>
-					<option value="8:40PM">8:40PM</option>
-					<option value="9:00PM">9:00PM</option>
-					<option value="9:20PM">9:20PM</option>
-					<option value="9:40PM">9:40PM</option>
-				</select><br/>
 				<button type="submit" name="submit" id="submit">SUBMIT</button>
 				<p id="tips"></p>
 			</form>

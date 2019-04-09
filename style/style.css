@@ -762,10 +762,6 @@ footer .center{
 		-ms-transform: scale(0.3);
 		transform: scale(0.3);
 	}
-
-	.countdown .figure > span{
-		transform: scale(1.2);
-	}
 }
 
 .tips{

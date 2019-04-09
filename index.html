@@ -55,7 +55,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<div class="drawer-container">
 				<a data-scroll href="#home" onClick="toggleDrawer()">Home</a>
 				<a data-scroll href="#about" onClick="toggleDrawer()">About</a>
-				<a data-scroll href="#division" onClick="toggleDrawer()">Division</a>
+				<a data-scroll href="#division" onClick="toggleDrawer()">Divisions</a>
 				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
 				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Apply</a>
 			</div>
@@ -70,7 +70,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					<a data-scroll href="#about">ABOUT</a>
 				</li>
 				<li id="nav-division">
-						<a data-scroll href="#division">DIVISION</a>
+						<a data-scroll href="#division">DIVISIONS</a>
 					</li>
 				<li id="nav-faq">
 					<a data-scroll href="#faq">FAQ</a>
@@ -99,8 +99,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			</picture>
 			<ul id="countdown-wrapper">
 			  <div class="wrap">  
-					<h1 class="countdown-title hidden-xl-down">BarCamp Cyberjaya x JumpStart Program</h1>
-					<h1 class="countdown-title hidden-xl-up">BarCamp Cyberjaya <br/>x<br/> JumpStart Program</h1>
+					<h1 class="countdown-title hidden-xl-down">BarCamp Cyberjaya x Jumpstart Program</h1>
+					<h1 class="countdown-title hidden-xl-up">BarCamp Cyberjaya <br/>x<br/> Jumpstart Program</h1>
 
 			    <div class="countdown">
 			      <div class="bloc-time days" data-init-value="0">
@@ -238,7 +238,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				</div>
 
 				<div class="two-column">
-					<p>JumpStart Program<br>
+					<p>Jumpstart Program<br>
 						<span class="sub">It aims to introduce the industrial side to new students as well as expose them to practical skills that could help them tackle their university life.
 						<br><br>
 						After organising several events with the industrial side in the past, IT Society is of the opinion that it is necessary to urge students to not only focus on their academics but to also get involved in co-curricular activities and side-projects (mini projects).</span></p>
@@ -273,7 +273,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<span class="sub">The creative team that plays a role in attracting and engaging with participants of the event through print media and digital media.</span></p>
 
 				<p>Event Management Division<br>
-				<span class="sub">The team that ensures a conducive ambience and the smooth flow of of events during the event day.</span></p>
+				<span class="sub">The team that is responsible in ensuring a conducive ambience and the smooth flow of events during the event day.</span></p>
 			</div>
 		</div>
 	</div>
@@ -283,43 +283,55 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<div class="row">
 			<h1 class="center">Join Our Committee</h1>
 			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbxEXotfMRgSIk3KsUE9ETDLLY6cMl5MMHhumTdaDhD5wH2Nk5Ih/exec">
-				<input class="input" type="text" name="email" id="email" placeholder="Email" required></br>
-				<input class="input" type="text" name="name" id="name" placeholder="How Should We Call You?" required></br>
-				<input class="input" type="text" name="student_id" id="student_id" placeholder="What is your student ID" required></input></br>
-				<input class="input" type="text" name="faculty" id="faculty" placeholder="Faculty" required></input></br>
+				<input class="input" type="text" name="email" id="email" placeholder="Enter your email" required></br>
+				<input class="input" type="text" name="name" id="name" placeholder="How should we call you?" required></br>
+				<input class="input" type="text" name="student_id" id="student_id" placeholder="Enter your student ID" required></input></br>
+				<input class="input" type="text" name="contact" id="contact" placeholder="Enter you contact number" required></input></br>
+				<div>
+					<select class="input" name="faculty" id="faculty" required>
+						<option value="" disabled selected>Select your faculty</option>
+						<option value="FCI">FCI</option>
+						<option value="FOE">FOE</option>
+						<option value="FOM">FOM</option>
+						<option value="FCM">FCM</option>
+						<option value="FAC">FAC</option>
+					</select>
+				</div>
 				<input class="input" type="date" name="birthday" id="birthday" placeholder="Date of Birth" required></input></br>
 				<input class="input" type="textarea" name="free_time" id="free_time" placeholder="How do you spend your free time?" required></input></br>	
 				<input class="input" type="textarea" name="experience" id="experience" placeholder="Briefly describe your past experience" required></input></br>
 				<div>
-					<select class="input wrap-3" name="choice_1" id="choice_1" required>
-						<option value="" disabled selected>Select First Choice</option>
-						<option value="Sponsorship Division">Sponsorship Division</option>
-						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
-						<option value="Event Management Division">Event Management Division</option>
-						<option value="General Affair Division">General Affair Division</option>
-					</select>
-					<select class="input wrap-3" name="choice_2" id="choice_2" required>
-						<option value="" disabled selected>Select Second Choice</option>
-						<option value="Sponsorship Division">Sponsorship Division</option>
-						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
-						<option value="Event Management Division">Event Management Division</option>
-						<option value="General Affair Division">General Affair Division</option>
-					</select>
-					<select class="input wrap-3" name="choice_3" id="choice_3" required>
-						<option value="" disabled selected>Select Third Choice</option>
-						<option value="Sponsorship Division">Sponsorship Division</option>
-						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
-						<option value="Event Management Division">Event Management Division</option>
-						<option value="General Affair Division">General Affair Division</option>
+					<select class="input" name="interview_day" id="interview_day" required>
+						<option value="" disabled selected>Select an interview day</option>
+						<option value="" disabled>*Interview time will be between 8.00 p.m - 10.00 p.m</option>
+						<option value="22 April">22 April</option>
+						<option value="23 April">23 April</option>
+						<option value="24 April">24 April</option>
 					</select>
 				</div>
-				<select name="interview_slot" id="interview_slot" required>
-					<option value="" disabled selected>Book your interview slot</option>
-					<option value="15 April 8:00PM">15 April 8:00PM</option>
-					<option value="15 April 8:20PM">15 April 8:20PM</option>
-					<option value="15 April 8:40PM">15 April 8:40PM</option>
-					<option value="15 April 9:00PM">15 April 9:00PM</option>
-				</select><br/>
+				<div>
+					<select class="input wrap-3" name="choice_1" id="choice_1" required>
+						<option value="" disabled selected>Select first choice</option>
+						<option value="Sponsorship Division">Sponsorship Division</option>
+						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
+						<option value="Event Management Division">Event Management Division</option>
+						<option value="General Affair Division">General Affairs Division</option>
+					</select>
+					<select class="input wrap-3" name="choice_2" id="choice_2" required>
+						<option value="" disabled selected>Select second choice</option>
+						<option value="Sponsorship Division">Sponsorship Division</option>
+						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
+						<option value="Event Management Division">Event Management Division</option>
+						<option value="General Affair Division">General Affairs Division</option>
+					</select>
+					<select class="input wrap-3" name="choice_3" id="choice_3" required>
+						<option value="" disabled selected>Select third choice</option>
+						<option value="Sponsorship Division">Sponsorship Division</option>
+						<option value="Publicity & Creativity Division">Publicity & Creativity Division</option>
+						<option value="Event Management Division">Event Management Division</option>
+						<option value="General Affair Division">General Affairs Division</option>
+					</select>
+				</div>
 				<button type="submit" name="submit" id="submit">SUBMIT</button>
 				<p id="tips"></p>
 			</form>
@@ -330,29 +342,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<div id="faq" class="container white-container">
 		<div class="row">
 			<h1 class="title">Frequently Asked Questions</h1>
-			<h2 class="title">What does IT Society normally do?</h2>
+			<h2 class="title">What does IT Society do?</h2>
 			<p>
-					IT Society aims to empower students as active practitioners of information technology and to represent all FCI students. IT Society used to organizing Tech Career Days, BarCamp, industrial trips, and workshops. Visit <a target="_blank" href="itsociety.rocks">here</a> to get more info.
+				IT Society aims to empower students as active practitioners of information technology and to represent all FCI students. In the past, IT Society have  organized Tech Career Days, BarCamp, industrial trips, and workshops. Visit <a target="_blank" href="itsociety.rocks" title="IT Society">here</a> to learn more.
 			</p>
-			<h2 class="title">Why should I participating society and co-organizing event?</h2>
+			<h2 class="title">What are the benefits I can gain from joining a society and co-organizing events?</h2>
 			<p>
-					You may be expecting to learn more absolutely cool stuff which you will not learn from daily classes, such as decision making, event planning, resource management. Other than that, you may be expecting to get connected to your senior and experienced working professional which will share their wonderful experience with you.
+				You may be expecting to learn more cool stuffs which you will not get from your classroom experience, such as decision making, event planning and resource management. In addition, you will get the opportunity to network with seniors and working professionals.
 			</p>
-			<h2 class="title">What would I do if I join?</h2>
+			<h2 class="title">What would I have to do if I join?</h2>
 			<p>
-					You will be allocated into a specific division according to your wish and strength. You will involved and experienced an event planning process which evolved from 0 - 1.
+					You will be allocated into a specific division according to your wish and strength. You will be involved in event planning before the event day and many more ad-hoc tasks during the event.
 			</p>
-			<h2 class="title">How does the event planning process carry out?</h2>
+			<h2 class="title">How are discussions for events carried out?</h2>
 			<p>
-					We will use <a target="_blank" href="https://slack.com/">Slack</a> for online discussion. Depends on the situation. there will be weekly or bi-weekly meeting for offline discussion. Normally, meeting will only carry out at night time which won’t affect your class attendance.
+				We will use  <a target="_blank" href="https://slack.com/">Slack</a> for online discussions. Depending on the situation. there will be weekly or bi-weekly meeting for offline discussion. Normally, meeting will only carry out at night time which won’t affect your class attendance.
 			</p>
-			<h2 class="title">Do I get the score for curriculum for joining society and co-organizing event?</h2>
+			<h2 class="title">Do I get points for co-curriculum when I join a society and co-organize events?</h2>
 			<p>
-					Yes. You can expect to gain SAPS point for participating actively in club and society activities.
+				Yes. You can expect to gain SAPS point for participating actively in club and society activities.
 			</p>
-			<h2 class="title">Will curriculum activity affect my academic study?</h2>
+			<h2 class="title">Will co-curriculum activities interfere with my academics?</h2>
 			<p>
-					Discussion and meeting will only carry out at night. And strictly avoid interface examination and study week period.
+				Discussions and meetings will only be carried out at night without clashing with exam period and study week.
 			</p>
 		</div>
 	</div> 	
@@ -454,7 +466,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				document.querySelector('#submit').innerHTML = "Form Submitted";
 				document.getElementById('gform').reset();
 				document.querySelector('#submit').disabled = false;
-				document.getElementById('tips').innerHTML = "Thanks for your application.<br/>We will inform you about the interview related information after we have process the application. Please take noted on your Whatsapp/Email.";
+				document.getElementById('tips').innerHTML = "Thank you for your application.<br/>You will be informed soon about the details of the interview session.";
 				return;
 			};
 			var encoded = Object.keys(data).map(function (k) {

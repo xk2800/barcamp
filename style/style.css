@@ -362,22 +362,27 @@ p{
 	outline: none;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder, .disabled{
 	color: rgba(255, 255, 255, 0.5);
 }
 
 .input.wrap-3, button.wrap-3, select.wrap-3, #view a.wrap-3{
-	width: 33%;
+	width: 32.8%;
+	margin-right: -3px;
 }
 
-input[type="date"]:before {
-	content: attr(placeholder) !important;
-	color: #aaa;
-	margin-right: 0.5em;
+.input.wrap-2, button.wrap-2, select.wrap-2, #view a.wrap-2{
+	width: 49.5%;
+	margin-right: -3px;
 }
-input[type="date"]:focus:before,
-input[type="date"]:valid:before {
-	content: "";
+
+input[type="date"]::before {
+	content: attr(placeholder);
+	width: 100%;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	display: none;
 }
 
 button, #view a{
@@ -482,7 +487,7 @@ footer .center{
     display: block;
     margin-bottom: 15px;
     font: normal 0.94em Arial;
-    color: #1a1a1a;
+    color: white;
     text-transform: uppercase; }
   .countdown .figure {
     position: relative;

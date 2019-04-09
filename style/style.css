@@ -463,6 +463,7 @@ footer .center{
 	transform: translate(-50%, -50%);
 	left: 50%;
 	color: white;
+    padding: 0;
 }
 
 #countdown-wrapper strong{
@@ -484,6 +485,7 @@ footer .center{
     .countdown .bloc-time:last-child {
       margin-right: 0; }
   .countdown .count-title {
+  	font-weight: 600;
     display: block;
     margin-bottom: 15px;
     font: normal 0.94em Arial;
@@ -505,7 +507,6 @@ footer .center{
       right: 0;
       margin: auto;
       font: normal 5.94em/107px Arial;
-      font-weight: 700;
       color: #e4392b; }
     .countdown .figure .top:after, .countdown .figure .bottom-back:after {
       content: "";
@@ -739,13 +740,31 @@ footer .center{
 
 @media screen and (max-width:768px){
 	.countdown{
-		display: none;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
 	}
 	.row{
 		width:90%;
 	}
 	.two-column{
 		width:100%;
+	}
+}
+
+@media screen and (max-width:480px){
+	.countdown{
+		-moz-transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		-o-transform: scale(0.3);
+		-ms-transform: scale(0.3);
+		transform: scale(0.3);
+	}
+
+	.countdown .figure > span{
+		transform: scale(1.2);
 	}
 }
 

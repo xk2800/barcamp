@@ -101,6 +101,11 @@ a{
 }
 .row, form{	
 	margin: 0px auto;
+}
+.row{
+	width: 80%;
+}
+form{
 	width: 70%;
 }
 nav.page_scroll{
@@ -180,20 +185,15 @@ ul#nav li#nav-register a:hover{
 	text-align: center;
 	color: #78C8D0;
 	margin: 0 auto;
-	min-height: calc(100vh - 100px);
-	/*max-height: 600px;*/
-}
-#bclogo{
-	position: relative;
+	min-height: calc(100vh - 10px);
 }
 #bclogo img{
 	display: block;
 	margin: 10px auto;
 	width: 100%;
-	-webkit-filter: blur(50px) brightness(.7);
-	-ms-filter: blur(50px) brightness(.7);
-	filter: blur(50px) brightness(.7);
-	position: relative;
+	filter: blur(20px);
+	-webkit-filter: blur(20px);
+	opacity: .7;
 } 
 #home .button{
 	min-width: 200px;
@@ -207,7 +207,7 @@ ul#nav li#nav-register a:hover{
 }
 .quoteslide {
 	position: relative;
-	height:  30px;
+	height:  100px; /*change to 30px when button is added below quoteslide */
 	padding: 10px;
 	margin: 0px;
 	list-style-type: none;
@@ -264,12 +264,17 @@ ul#nav li#nav-register a:hover{
 	content: "";
 	display: block;
 }
+
 .two-column{
-	width: 48%;
-	position: relative;
+	width: 50%;
 	float: left;
-	margin: 24px auto;
-	padding:  10px;
+	padding: 10px;
+	padding-right: 30px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+p{
+	text-align: justify;
 }
 #venue #maps{
 	height: 380px;
@@ -402,10 +407,91 @@ button:hover{
 .agenda{
  	border-top: 1px solid #B0BEC5;
 }
+.agenda-row{
+/* 	width: 100%;
+ */	display: -webkit-box;	display: -ms-flexbox;	display: flex;
+	border-bottom: 1px solid #B0BEC5;
+	text-align: left;
+}
+.agenda-time{
+	font-size: 1.2em;
+	color: #FF6D56;
+ 	width: 100px;
+	padding: 10px 30px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+ }
+.agenda-items{
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+ 	padding: 10px;
+}
+.agenda-item{
+ 	padding: 0 12px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.agenda-title{
+	color: #37474F;
+	margin-bottom: 8px;
+}
+.agenda-room{
+	text-align: right;
+	font-size: 0.8em;
+	color: #42cdb2;
+}
 #faq{
 	border-bottom: 1px solid #E0E0E0;
 }
-
+#sponsors{
+	background-color: #FAFAFA;
+}
+.logo-list{
+	width: 70%;	
+	margin:  0 auto;
+	text-align: center;
+}
+.logo{
+	width: 24%;
+	display: inline-block;
+	margin: 30px;
+}
+.logo a{
+	text-decoration: none;
+}
+.logo img{
+	vertical-align: middle;
+	width: 90%;
+	margin:  0px 20px;
+}
+.logo img:hover{
+	opacity:  0.7;
+}
+#sponsors .border-btn{
+	margin-bottom: 24px;
+}
+#sponsors .small{
+	color:  #E6292A;
+	font-weight: 400;
+	margin: 32px auto 20px auto;
+}
 footer{
 	background-color: #07223D;
 	padding: 28px 0;
@@ -428,131 +514,6 @@ footer .center{
 	font-size: 14px;
 	color: rgba(255,255,255,0.7);
 }
-
-
-/*Count down*/
-
-#countdown-wrapper {
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	width: 80%;
-	color: white;
-}
-
-#countdown-wrapper strong{
-	font-weight: 400;
-	color: #e4392b; 
-}
-
-.countdown {
-  width: 720px;
-	margin: 0 auto; }
-	.countdown-title{
-		font-family: Merriweather Sans;
-	}
-  .countdown .bloc-time {
-    float: left;
-    margin-right: 45px;
-    text-align: center; }
-    .countdown .bloc-time:last-child {
-      margin-right: 0; }
-  .countdown .count-title {
-    display: block;
-    margin-bottom: 15px;
-    font: normal 0.94em Arial;
-    color: #1a1a1a;
-    text-transform: uppercase; }
-  .countdown .figure {
-    position: relative;
-    float: left;
-    height: 110px;
-    width: 100px;
-    margin-right: 10px;
-    background-color: #fff;
-    border-radius: 8px; }
-    .countdown .figure:last-child {
-      margin-right: 0; }
-    .countdown .figure > span {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
-      font: normal 5.94em/107px Arial;
-      font-weight: 700;
-      color: #e4392b; }
-    .countdown .figure .top:after, .countdown .figure .bottom-back:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .countdown .figure .top {
-      z-index: 3;
-      background-color: #f7f7f7;
-      transform-origin: 50% 100%;
-      -webkit-transform-origin: 50% 100%;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-      -moz-transform: perspective(200px);
-      -webkit-transform: perspective(200px);
-      -o-transform: perspective(200px);
-      -ms-transform: perspective(200px);
-      transform: perspective(200px); }
-    .countdown .figure .bottom {
-      z-index: 1; }
-      .countdown .figure .bottom:before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background-color: rgba(0, 0, 0, 0.02); }
-    .countdown .figure .bottom-back {
-      z-index: 2;
-      top: 0;
-      height: 50%;
-      overflow: hidden;
-      background-color: #f7f7f7;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px; }
-      .countdown .figure .bottom-back span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto; }
-    .countdown .figure .top, .countdown .figure .top-back {
-      height: 50%;
-      overflow: hidden;
-      backface-visibility: hidden; }
-    .countdown .figure .top-back {
-      z-index: 4;
-      bottom: 0;
-      background-color: #fff;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0;
-      -moz-transform: perspective(200px) rotateX(180deg);
-      -webkit-transform: perspective(200px) rotateX(180deg);
-      -o-transform: perspective(200px) rotateX(180deg);
-      -ms-transform: perspective(200px) rotateX(180deg);
-      transform: perspective(200px) rotateX(180deg);
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 10px; }
-      .countdown .figure .top-back span {
-        position: absolute;
-        top: -100%;
-        left: 0;
-        right: 0;
-        margin: auto; }
-
-/*# sourceMappingURL=style.css.map */
 
 
 @media screen and (max-width:860px){
@@ -690,7 +651,4 @@ footer .center{
 		margin: 0px;
 	}
 
-	#countdown-wrapper{
-		display : none;
-	}
 }

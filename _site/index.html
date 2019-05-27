@@ -283,7 +283,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<div id="venue" class="container">
 		<div class="row">
 			<h1>Venue</h1>
-			<div id="maps"></div>
+			<div id="maps"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EmRllrGBXXlx38W93HtaWxILN7vyF_KS" width="640" height="480"></iframe></div>
 		</div>
 
 		<div class="row">
@@ -316,7 +316,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</div>
 
 	<!--insert proposed talk form and agenda here from backup.txt-->
-	
+
 	<!-- faq -->
 	<div id="faq" class="container">
 		<div class="row">
@@ -441,25 +441,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			document.querySelector('.drawer').classList.toggle('show')
 		}
 
-		function initMap() {
-			var myLatLng = { lat: 2.9276332, lng: 101.6418755 };
-			map = new google.maps.Map(document.getElementById('maps'), {
-				center: myLatLng,
-				scrollwheel: false,
-				zoom: 16
-			});
+		// function initMap() {
+		// 	var myLatLng = { lat: 2.9276332, lng: 101.6418755 };
+		// 	map = new google.maps.Map(document.getElementById('maps'), {
+		// 		center: myLatLng,
+		// 		scrollwheel: false,
+		// 		zoom: 16
+		// 	});
 
-			var marker = new google.maps.Marker({
-				map: map,
-				position: myLatLng,
-				title: 'Hello World!'
-			});
-		}
-		window.addEventListener('resize', function (event) {
-			var center = map.getCenter();
-			google.maps.event.trigger(map, "resize");
-			map.setCenter(center);
-		});
+		// 	var marker = new google.maps.Marker({
+		// 		map: map,
+		// 		position: myLatLng,
+		// 		title: 'Hello World!'
+		// 	});
+		// }
+		// window.addEventListener('resize', function (event) {
+		// 	var center = map.getCenter();
+		// 	google.maps.event.trigger(map, "resize");
+		// 	map.setCenter(center);
+		// });
 
 		function getFormData() {
 			var elements = document.getElementById("gform").elements;

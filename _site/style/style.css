@@ -276,8 +276,9 @@ ul#nav li#nav-register a:hover{
 p{
 	text-align: justify;
 }
-#venue #maps{
+#venue #maps iframe{
 	height: 380px;
+	width: 100%;
 }
 .slides {
 	position: relative;

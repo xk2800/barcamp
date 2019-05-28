@@ -774,4 +774,41 @@ footer .center{
         top: -100%;
         left: 0;
         right: 0;
-        margin: auto; }
+				margin: auto; }
+				
+
+@media screen and (max-width:1020px){
+	.countdown{
+		-moz-transform: scale(0.7);
+		-webkit-transform: scale(0.7);
+		-o-transform: scale(0.7);
+		-ms-transform: scale(0.7);
+		transform: scale(0.7);
+	}
+}
+
+@media screen and (max-width:768px){
+	.countdown{
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+	.row{
+		width:90%;
+	}
+	.two-column{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:480px){
+	.countdown{
+		-moz-transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		-o-transform: scale(0.3);
+		-ms-transform: scale(0.3);
+		transform: scale(0.3);
+	}
+}

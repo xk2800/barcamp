@@ -4,6 +4,19 @@ body, .input{
 	letter-spacing: 1px;
 	margin: 0 auto;
 }
+/* Font Awesome */
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style : normal;
+         src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+         src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+	}
+	
 h1{
 	padding-top: 32px;
 	font-size: 50px;
@@ -812,3 +825,25 @@ footer .center{
 		transform: scale(0.3);
 	}
 }
+
+a.btn-download{
+	width: 30%;
+	padding: 15px;
+	background: #07223d;
+	color: white;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	border: 3px solid transparent;
+	transition: border .1s ease-in;
+}
+a.btn-download:hover{
+	border: 3px solid #e4392b;
+	transition: border .1s ease-out;
+
+}
+a.btn-download::before{
+	font-family: FontAwesome;
+	content: '\f019';
+	padding-right: 5px;
+}
+

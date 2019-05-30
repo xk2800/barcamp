@@ -20,7 +20,7 @@ var Countdown = {
             };
 
             
-            var targetDate = new Date("2019/7/13 00:00:00");   
+            var targetDate = new Date("2019/8/17 00:00:00");   
 
             // Other date related variables
             var hrs;

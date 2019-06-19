@@ -76,12 +76,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<li id="nav-venue">
 					<a data-scroll href="#venue">VENUE</a>
 				</li>
-				<!-- <li id="nav-proposed-talks">
-					<a data-scroll href="#proposed-talks">TOPICS</a>
+				<li id="nav-proposed-talks">
+					<a data-scroll href="#proposed-talks">TALKS</a>
 				</li>
-				<li id="nav-agenda">
+				<!-- <li id="nav-agenda">
 					<a data-scroll href="#agenda">AGENDA</a>
-				</li> -->
+				</li>  -->
 				<li id="nav-faq">
 					<a data-scroll href="#faq">FAQ</a>
 				</li>
@@ -283,14 +283,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	</div>
 
+	<!--Call for speakers-->
+	<div id="proposed-talks" class="container">
+		<div class="row">
+			<h1>Call for Speakers</h1>
+
+			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbw9briOIJEE6CMNc0AxRgfm_x7yQCOzFhmnlO-MozAZe055g6I/exec">
+				<input class="input" type="text" name="name" id="name" placeholder="What should we call you?" required></br>
+				<textarea class="input" name="topic" id="topic" placeholder="What will you be talking about?" required></textarea></br>
+				<button class="btn btn-light" type="submit" name="submit" id="submit">Submit</button>
+				
+					<p class="small center">*You can take a look below at the talks that have already been proposed: </p>
+					<button class="btn btn-light btn-sm"><a href="https://goo.gl/Q1Smg8" target="_blank" rel="noopener">View proposed topics</a></button>
+			</form>
+		</div>
+	</div>
 	<!-- venue -->
-	<div id="venue" class="container">
+	<div id="venue" class="container white-container">
 		<div class="row">
 			<h1>Venue</h1>
 			<div id="maps"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EmRllrGBXXlx38W93HtaWxILN7vyF_KS" width="640" height="480"></iframe></div>
 		</div>
 
 		<div class="row">
+			<h1>How to Get to MMU</h1>
 			<div id="public" class="two-column">
 				<h2>Public Transport</h2>
 				<ol>
@@ -423,7 +439,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				services, attract young talents and increase market share.
 			</p>
 			<div class="center">
-				<a class="btn-download" href="/SponsorhipProposal_BarCampCyberjaya.pdf" download>Sponsorship Proposal</a>
+				<button class="btn btn-dark btn-download btn-sm" ><a href="/SponsorhipProposal_BarCampCyberjaya.pdf" download>Sponsorship Proposal</a></button>
 				<br>
 				Have any inquiries? Drop us an email to <a href="mailto:itsoc.mmu@gmail.com">itsoc.mmu@gmail.com</a>
 			

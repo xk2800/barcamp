@@ -25,8 +25,13 @@ h1{
 }
 h2{
 	font-weight: normal;
-	color: #FFF;
+	color: white;
 }
+.white-container .row .two-column h2{
+	color: black;
+}
+
+
 p, #public ol li, #driving ol li{
 	font-size: 1rem;
 	font-weight: 400;
@@ -241,27 +246,7 @@ ul#nav li#nav-register a:hover{
 	opacity: 1;
 	z-index: 2;
 }
-.button{
-	background-color: #f9de59;
-	border: none;
-	border-radius: 4px;
-	color: #000;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	font-weight: 500;
-	margin: 0 20px;
-	-webkit-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-.button:hover{
-	background-color: #9f53db;
-	border-color: #9f53db;
-	color: #FFF;
-}
+
  .description{
  	font-size: 2em;
  	text-align: center;
@@ -379,35 +364,10 @@ p{
 	color: rgba(255, 255, 255, 0.5);
 }
 
-button, #view a{
-	text-align: center;
-	margin: 15px 5px;
-	border: 3px solid rgba(255, 255, 255, 0.5);
-	-webkit-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-}
-
-button:hover{
-	border-color: #f9de59;
-	cursor:  pointer;
-}
-
 .small{
 	font-size: 14px;
 	font-weight:  300;
-	max-width: 480px;
 	margin: 32px auto 8px auto;
-}
-
-#view a{
-	display: inline-block;
-	width: auto;
-}
-
-#view a:hover{
-	border: 3px solid transparent;
-	background-color: rgba(255, 205, 210, 0.22);
 }
 
 .center{
@@ -826,24 +786,57 @@ footer .center{
 	}
 }
 
-a.btn-download{
-	width: 30%;
+.btn{
+	width: 100%;
 	padding: 15px;
-	background: #07223d;
-	color: white;
 	border-radius: 5px;
-	margin: 0 0 20px 0;
 	border: 3px solid transparent;
 	transition: border .1s ease-in;
+	display: block;
 }
-a.btn-download:hover{
-	border: 3px solid #e4392b;
-	transition: border .1s ease-out;
+
+.btn:hover{
+	border: 3px solid #f9de59;
+	cursor: pointer;
+}
+
+.btn a{
+	text-decoration: none;
+}
+
+.btn-dark{
+	background: #07223d;
+	color: white;
+}
+
+.btn-light{
+	color: #07223d;
+	background: #78C8D0;
+}
+
+.btn-download{
+	margin: 0 0 20px 0;
 
 }
-a.btn-download::before{
+.btn-download:hover{
+	transition: border .1s ease-out;
+}
+
+.btn-download::before{
 	font-family: FontAwesome;
 	content: '\f019';
 	padding-right: 5px;
 }
 
+.btn-sm{
+	width: 30%;
+	margin: auto;
+}
+
+.btn-dark a{
+	 color: #fff;
+}
+
+.btn-light a{
+	color: #07223d;
+}

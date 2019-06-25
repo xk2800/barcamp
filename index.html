@@ -288,13 +288,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<div class="row">
 			<h1>Call for Speakers</h1>
 
-			<form id="gform" class="flex" method="POST" action="https://script.google.com/macros/s/AKfycbw9briOIJEE6CMNc0AxRgfm_x7yQCOzFhmnlO-MozAZe055g6I/exec">
+			<form id="form" class="flex" name="submit-to-google-sheet">
 				<input class="input" type="text" name="name" id="name" placeholder="What should we call you?" required></br>
+				<input class="input" type="text" name="contact" id="contact" placeholder="How can we contact you?">
 				<textarea class="input" name="topic" id="topic" placeholder="What will you be talking about?" required></textarea></br>
 				<button class="btn btn-light" type="submit" name="submit" id="submit">Submit</button>
+				<p class="message"></p>
 				
 					<p class="small center">*You can take a look below at the talks that have already been proposed: </p>
-					<button class="btn btn-light btn-sm"><a href="https://goo.gl/Q1Smg8" target="_blank" rel="noopener">View proposed topics</a></button>
+					<button class="btn btn-light btn-sm"><a href="https://docs.google.com/spreadsheets/d/1cf03LYiRLIx-r170xyR9YRhyt8V_Qm-fE-MLEMmveeg/edit?usp=sharing" target="_blank" rel="noopener">View proposed topics</a></button>
 			</form>
 		</div>
 	</div>
@@ -456,6 +458,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</footer>
 
+	<script src="js/submit-form.js"></script>
 	<script type="text/javascript">
 		var slides = document.querySelectorAll('.slides .image');
 		var currentSlide = 0;
@@ -564,7 +567,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<!-- Live Chat Widget -->
 	<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#E4392B" data-apps="JTdCJTIyZmFjZWJvb2slMjI6JTIyMjA2MzIyODQ5NDEyNTQ2JTIyLCUyMmVtYWlsJTIyOiUyMml0c29jLm1tdUBnbWFpbC5jb20lMjIlN0Q="></script>
-	<script type="text/javascript" src="countdown.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
 
 </body>
 </html>

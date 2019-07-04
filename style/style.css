@@ -17,6 +17,15 @@ body, .input{
                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
 	}
 	
+a:link{
+	color: #78C8D0;
+}
+
+
+a:visited{
+	color: #78C8D0;
+}
+
 h1{
 	padding-top: 32px;
 	font-size: 50px;
@@ -27,8 +36,14 @@ h2{
 	font-weight: normal;
 	color: white;
 }
-.white-container .row .two-column h2{
-	color: black;
+
+h3{
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+.white-container h1, .white-container h2, .white-container h3{
+	color: #07223D;
 }
 
 

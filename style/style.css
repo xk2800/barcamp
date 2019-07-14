@@ -224,8 +224,8 @@ ul#nav li#nav-register a:hover{
 	display: block;
 	margin: 10px auto;
 	width: 100%;
-	filter: blur(20px);
-	-webkit-filter: blur(20px);
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
 	opacity: .7;
 } 
 #home .button{

@@ -378,6 +378,9 @@ p{
 .others{
 	display: none;
 }
+.others1{
+	display: none;
+}
 ::-webkit-input-placeholder{
 	color: rgba(255, 255, 255, 0.5);
 }

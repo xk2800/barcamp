@@ -67,7 +67,7 @@ a{
 	margin: 0 auto;
 	padding: 24px 0 36px 0;
 	position: relative;
-	background: #642c6a;
+	background-image: url(/img/cover-2.png);
 	color: #FFF;
 }
 .container#past{
@@ -130,6 +130,7 @@ a{
 }
 .white-container{
 	background-color: #fff;
+	background-image: none;
 	color: #000;
 	font-weight: normal;
 }
@@ -145,9 +146,9 @@ form{
 nav.page_scroll{
 	position: fixed;
 	top: 0;
-	background-color: #25256f;
+	background-color: #642c6a;
 	opacity: 0.97;
-	border-bottom: 1px solid #25256f;
+	border-bottom: 1px solid #642c6a;
 	height: 64px;
 }
 .nav-bar{
@@ -475,7 +476,7 @@ p{
 	margin: 32px auto 20px auto;
 }
 footer{
-	background-color: #25256f;
+	background-color: #642c6a;
 	padding: 28px 0;
 	font-size: 1em;
 }
@@ -812,13 +813,13 @@ footer .center{
 }
 
 .btn-dark{
-	background: #25256f;
+	background: #642c6a;
 	color: white;
 }
 
 .btn-light{
 	color: #fff;
-	background: #25256f;
+	background: #642c6a;
 }
 
 .btn-download{
@@ -852,8 +853,12 @@ footer .center{
 .header{
 	width: 100vw;
 	position: relative;
-	background-image: url(/img/cover-2.png);
+	background-image: url(/img/Asset\ 3.png);
 	height: 800px;
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .title{
@@ -878,4 +883,8 @@ footer .center{
 	margin: 0 auto;
 	padding: 20px 30px;
 	font-size: 1.6em;
+}
+
+footer a:link, footer a:hover, footer a:visited{
+	color: white;
 }

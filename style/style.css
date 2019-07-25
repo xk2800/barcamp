@@ -19,12 +19,12 @@ body, .input{
 	}
 	
 a:link{
-	color: #78C8D0;
+	color: #c13664;
 }
 
 
 a:visited{
-	color: #78C8D0;
+	color: #c13664;
 }
 
 h1{
@@ -192,29 +192,7 @@ ul#nav li a:hover{
 ul#nav li#nav-register a:hover{
 	color: #FFF;
 }
-.border-btn{
-	border: 2px solid #78C8D0;
-	border-radius: 4px;
-	padding: 10px 20px;
-	-webkit-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-}
-.border-btn:hover{
-	background-color: #6AC4AA;
-	border-color: #6AC4AA;
-	-webkit-box-shadow: 0 0 10px 3px #E0E0E0;
-	        box-shadow: 0 0 10px 3px #E0E0E0;
-}
-.title{
-	color: #07223D;
-}
-.highlight{
-	color: #78C8D0;
-}
-.sub{
-	color:  #78909C;
-}
+
 #home{
 	text-align: center;
 	color: #78C8D0;
@@ -419,7 +397,7 @@ p{
 }
 .agenda-time{
 	font-size: 1.2em;
-	color: #FF6D56;
+	color: #25256f;
  	width: 100px;
 	padding: 10px 30px;
 	-webkit-box-align: center;
@@ -668,7 +646,7 @@ footer .center{
 
 #countdown-wrapper strong{
 	font-weight: 400;
-	color: #e4392b; 
+	color: #25256f; 
 }
 
 .countdown {
@@ -707,7 +685,7 @@ footer .center{
       right: 0;
       margin: auto;
       font: normal 5.94em/107px Arial;
-      color: #e4392b; }
+      color: #c13664; }
     .countdown .figure .top:after, .countdown .figure .bottom-back:after {
       content: "";
       position: absolute;

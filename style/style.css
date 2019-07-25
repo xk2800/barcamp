@@ -351,14 +351,14 @@ p{
 	background-color: transparent;
 }
 .input:hover{
-	border: 2.3px solid #c13664;
+	border: 2.3px solid #ed1940;
 	color: #fff;
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 .input:focus{
-	border: 2.3px solid #c13664;
+	border: 2.3px solid #ed1940;
 	color: #FFF;
 	outline: none;
 }

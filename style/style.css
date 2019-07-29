@@ -775,11 +775,6 @@ footer .center{
 
 @media screen and (max-width:768px){
 	.countdown{
-		-moz-transform: scale(0.5);
-		-webkit-transform: scale(0.5);
-		-o-transform: scale(0.5);
-		-ms-transform: scale(0.5);
-		transform: scale(0.5);
 		display: none;
 	}
 	.row{
@@ -805,28 +800,41 @@ footer .center{
 	.title{
 		margin-bottom: 0;
 	}
-
+	
 	
 }
 
 @media screen and (max-width:480px){
-	.countdown{
-		-moz-transform: scale(0.3);
-		-webkit-transform: scale(0.3);
-		-o-transform: scale(0.3);
-		-ms-transform: scale(0.3);
-		transform: scale(0.3);
-		display: none;
-	}
-	.header #countdown-wrapper .title img{
-		width: 250px;
-	}
+
+	
 
 	.title{
 		margin-bottom: 0;
 	}
 	
-	
+	.btn-sm{
+		width: 70% !important;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+
+	.header #countdown-wrapper .title img{
+		width: 250px;
+		margin-left: -10px;
+	}
+	.header #countdown-wrapper .title h3{
+		font-size: 1.1rem;
+		line-height: 2;
+		width: 250px;
+		margin-left: -20px;
+		text-align: center;
+	}
+
+	.header{
+		height: 650px !important;
+	}
 }
 
 .btn{

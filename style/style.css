@@ -316,6 +316,31 @@ p{
 	background-size: cover;
 	background-position: center;
 }
+.image:nth-of-type(4) {
+	background: url(../img/bg4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.image:nth-of-type(5) {
+	background: url(../img/bg5.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.image:nth-of-type(6) {
+	background: url(../img/bg6.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.image:nth-of-type(7) {
+	background: url(../img/bg7.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.image:nth-of-type(8) {
+	background: url(../img/bg8.jpg);
+	background-size: cover;
+	background-position: center;
+}
 .slides .hover{
 	position: absolute;
 	width: 100%;

@@ -988,3 +988,6 @@ footer a:link, footer a:hover, footer a:visited{
 	color: white;
 }
 
+th{
+	background-color: #642c6a;
+}

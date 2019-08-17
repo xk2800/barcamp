@@ -848,7 +848,18 @@ footer .center{
 		margin-bottom: 0;
 	}
 	
-	
+	.btn.register{
+		display: block;
+		width: 200px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		padding: 20px 30px;
+		font-size: 1em;
+	}
+
+	.header{
+		height: 
+	}
 }
 
 @media screen and (max-width:480px){
@@ -890,6 +901,7 @@ footer .center{
 	.btn-container a{
 		display: block;
 	}
+	
 }
 
 .btn{
@@ -992,4 +1004,9 @@ footer a:link, footer a:hover, footer a:visited{
 
 th{
 	background-color: #642c6a;
+}
+
+.w3-table-all{
+	width: 100%;
+	margin: 0 auto;
 }

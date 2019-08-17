@@ -32,7 +32,7 @@ var Countdown = {
                 TIME LEFT BEFORE LAUNCH
             * -------------------------- */
             // Get the current date
-            var currentDate = new Date("2019/8/17");
+            var currentDate = new Date("2019/8/17 00:12:00");
 
             // Find the difference between dates
             var diff = (currentDate - targetDate)/1000;

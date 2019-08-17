@@ -43,7 +43,7 @@ h3{
 	font-size: 1.2em;
 }
 
-.white-container h1, .white-container h2, .white-container h3, #sponsors .row h1{
+.white-container h1, .white-container h2, .white-container h3{
 	color: #642c6a;
 }
 
@@ -365,7 +365,6 @@ p{
 	width: 100%;
 	margin: 5px;
 	border: 2px solid rgba(255, 255, 255, 0.5);
-	background-color: #25256f;
 	border-radius: 4px;
 	padding: 10px 15px;
 	-webkit-box-sizing: border-box;
@@ -386,7 +385,14 @@ p{
 	color: #FFF;
 	outline: none;
 }
+.white-container .row form .input{
+	border: 2px solid #642c6a;
+	color: #642c6a;
+}
 
+.white-container .row form .input:focus{
+	border: 2.3px solid #ed1940
+}
 .others{
 	display: none;
 }
@@ -471,22 +477,20 @@ p{
 	background-color: #FAFAFA;
 }
 .logo-list{
-	width: 70%;	
-	margin:  0 auto;
-	text-align: center;
+	width: 80%;	
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .logo{
-	width: 24%;
-	display: inline-block;
-	margin: 30px;
+	width: 20%;
 }
 .logo a{
 	text-decoration: none;
 }
 .logo img{
-	vertical-align: middle;
-	width: 90%;
-	margin:  0px 20px;
+	width: 200px;
 }
 .logo img:hover{
 	opacity:  0.7;
@@ -650,9 +654,10 @@ footer .center{
 	.agenda-room{
 		padding: 5px;
 	}
-	.logo{
+	.logo-list{
 		width: 40%;
 		margin: 20px 10px;
+		flex-direction: column;
 	}
 	.logo img{
 		margin: 0px;
@@ -916,12 +921,20 @@ footer .center{
 	color: #07223d;
 }
 
+.btn-container{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+
+
 /*header*/
 .header{
 	width: 100vw;
 	position: relative;
 	background-image: url(/img/Asset\ 3.png);
-	height: 800px;
+	height: 850px;
 	background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

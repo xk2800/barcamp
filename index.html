@@ -1,20 +1,10 @@
-<!--
-@license
-Copyright 2017 Peh Shu Wei
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BarCamp Cyberjaya 2019</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 	<link href="img/favicon.ico" rel="shortcut icon">
@@ -59,11 +49,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<a data-scroll href="#faq" onClick="toggleDrawer()">FAQ</a>
 
 				<a data-scroll href="#proposed-talks" onClick="toggleDrawer()">Call for Speakers</a>
-				<a data-scroll href="#sponsors" onClick="toggleDrawer()">Call for Sponsor</a>
 				<a data-scroll href="#exhibitors" onClick="toggleDrawer()">Call for Exhibitors</a>
-				<a data-scroll href="#agenda" onClick="toggleDrawer()">BarCamp`19 Sponsors</a>
-				<!-- <a data-scroll href="#sponsors" onClick="toggleDrawer()">Past Sponsors</a> -->
-				<!-- <a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" onClick="toggleDrawer()" rel="noopener">Register</a> -->
+				<a data-scroll href="#agenda" onClick="toggleDrawer()">Our Sponsors</a>
+				
 			</div>
 			<div class="scrim" onClick="toggleDrawer()"></div>
 		</div>
@@ -93,18 +81,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<li id="nav-exhibitors">
 					<a data-scroll href="#sponsors">BARCAMP`19 SPONSORS</a>
 				</li>
-				<!-- <li id="nav-sponsor">
-					<a data-scroll href="#sponsors">PAST SPONSORS</a>
-				</li> -->
-				<!-- <li id="nav-agenda">
-					<a data-scroll href="#agenda">AGENDA</a>
-				</li>  -->
-				
-				
-				
-				<!-- <li id="nav-register">
-					<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" rel="noopener" class="border-btn">REGISTER</a>
-				</li> -->
 			</ul>
 		</div>
 		<div class="nav-bar-mobile">
@@ -239,9 +215,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				</div>
 				</ul>
 
-				<!--REGISTER-->
+				<div class="btn-container">
+
+					<!--REGISTER-->
 				<a href="https://www.eventbrite.com/e/barcamp-cyberjaya-2019-tickets-64921018514" target="_blank" rel="noopener"><button class="btn btn-light register">GET TICKETS</button></a>
 
+				<!--VOTE-->
+				<a href="http://itsbarcamp.herokuapp.com/login" target="_blank" rel="noopener"><button class="btn btn-light register">VOTE FOR TALKS</button></a>
+
+				</div>
+				
 				<div id="slogan" class="row">
 					<div class="quoteslide">
 						<div class="quote show">"The term 'BarCamp' has nothing to do with alcohol but everything to do with high spirits - a spirit of sharing ideas in a free and fun environment." - Outlook Business</div>
@@ -250,141 +233,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					</div>
 				</div>
 	</div>
-	<!-- home -->
-	<!-- <div id="home" >
-		<div id="bclogo">
-			<picture>
-				<source media="(max-width: 900px)" srcset="img/cover-2.png">
-				<img src="img/cover-2 img.png" alt="homepage"/>
-			</picture>
-		</div>
-
-		countdown
-		<ul id="countdown-wrapper">
-			<div class="wrap">  
-				<h1 class="countdown-title hidden-xl-down">BarCamp Cyberjaya x Jumpstart Program</h1>
-				<h1 class="countdown-title hidden-xl-up">BarCamp Cyberjaya</h1>
-
-				<div class="countdown">
-				<div class="bloc-time days" data-init-value="0">
-					<span class="count-title">DAYS</span>
-
-					<div class="figure hours hours-1">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>
-					</div>
-
-					<div class="figure hours hours-2">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>
-					</div>
-				</div>
-
-				<div class="bloc-time hours" data-init-value="0">
-					<span class="count-title">HOURS</span>
-
-					<div class="figure min min-1">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>        
-					</div>
-
-					<div class="figure min min-2">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>
-					</div>
-				</div>
-
-				<div class="bloc-time min" data-init-value="0">
-					<span class="count-title">MINUTES</span>
-
-					<div class="figure sec sec-1">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>          
-					</div>
-
-					<div class="figure sec sec-2">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>
-					</div>
-				</div>
-
-				<div class="bloc-time sec" data-init-value="0">
-					<span class="count-title">SECONDS</span>
-
-					<div class="figure sec sec-1">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>          
-					</div>
-
-					<div class="figure sec sec-2">
-					<span class="top">0</span>
-					<span class="top-back">
-						<span>0</span>
-					</span>
-					<span class="bottom">0</span>
-					<span class="bottom-back">
-						<span>0</span>
-					</span>
-					</div>
-				</div>
-				</div>
-			</div>
-			</ul>
-		quoteslide	  
- 		<div id="slogan" class="row">
-			<div class="quoteslide">
-				<div class="quote show">"The term 'BarCamp' has nothing to do with alcohol but everything to do with high spirits - a spirit of sharing ideas in a free and fun environment." - Outlook Business</div>
-				<div class="quote">"A gathering of folk who, in one way or another, aim to make the world a better place." - Dr Koh Niak Wu</div>
-				<div class="quote">"Barcamp Cyberjaya its one amazing adhoc event where we see young mind share their idea and get it feedback with industry fellow." - Mr. Curry Khoo</div>
-			</div>
-		</div>
-
-		<div id="button" class="row">
-			<a href="https://barcamp-cyberjaya-2017.eventbrite.com/?aff=website" target="_blank" rel="noopener" class="button">REGISTER</a>
-		</div>
-	</div> -->
 
 	<!-- about -->
 	<div id="about" class="container white-container">
@@ -438,7 +286,38 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</div>
 	</div>
 
-	<div id="how-to" class="container white-container">
+	<!--Agenda-->
+	<div id="agenda" class="container white-container">
+		<!-- <div class="row">
+			<h1>Agenda</h1>
+			
+			<table class="w3-table-all">
+				<thead>
+				  <tr class="w3-red">
+					<th>TIME</th>
+					<th>BARCAMP</th>
+					<th>EXHIBITION</th>
+				  </tr>
+				</thead>
+				<tr>
+				  <td>12:00 - 12:45</td>
+				  <td>Check In / Lunch </td>
+				  <td rowspan="2">Exhibition Peak Session</td>
+				</tr>
+				<tr>
+				  <td>12:45 - 13:30</td>
+				  <td>Propose Topic / Networking / Solat</td>
+				</tr>
+				<tr>
+				  <td>Adam</td>
+				  <td>Johnson</td>
+				  <td>67</td>
+				</tr>
+			  </table>
+		</div> -->
+	</div>
+
+	<div id="how-to" class="container">
 		<div class="row">
 			<h1>How to Get to MMU</h1>
 			<div id="public" class="two-column">
@@ -460,7 +339,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</div>
 
 	<!-- past barcamp photos -->
-	<div id="past" class="container">
+	<div id="past" class="container white-container">
 		<div class="slides">
 			<div class="image show"></div>
 			<div class="image"></div>
@@ -540,6 +419,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					</select>
 				</div>
 				<div class="others">Other Category: <input type="text" class="input" name="other-category" placeholder="Please Specify Category of Talk"></div>
+				<div>
+					<select class="input" name="difficulty" required>
+						<option value="" disabled selected>Select Talk Difficulty</option>
+						<option value="Easy">Easy</option>
+						<option value="Intermediate">Intermediate</option>
+						<option value="Hard">Hard</option>
+					</select>
+				</div>
 				<textarea class="input" name="description" placeholder="Description of Talk" required></textarea></br>
 				<input class="input" type="text" name="contact" placeholder="Email">
 				<input class="input" type="text" name="diet" placeholder="Dietary Restriction, If Any." required>
@@ -554,7 +441,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</div>
 
 	<!--Sponsor us-->
-	<div id="sponsor-us" class="container white-container">
+	<!-- <div id="sponsor-us" class="container white-container">
 		<div class="row">
 			<h1>Call for Sponsors</h1>
 			<p>Since BarCamp Cyberjaya is free for everyone, we need your help to make it
@@ -571,10 +458,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				Have any inquiries? Drop us an email to <a href="mailto:itsoc.mmu@gmail.com">itsoc.mmu@gmail.com</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!--Call for exhibitors-->
-	<div id="exhibitors" class="container">
+	<div id="exhibitors" class="container white-container">
 		<div class="row">
 			<h1>Call for Exhibitors</h1>
 			<p>Have something that you would like to share to the world? Showcase your next big idea and innovation at BarCamp Cyberjaya.</p>
@@ -609,10 +496,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 	<!-- sponsors & partners -->
-	<div id="sponsors" class="container white-container">
+	<div id="sponsors" class="container">
 		<!-- sponsor title -->
 		<div class="row">
-			<h1>BarCamp`19 Sponsors</h1>
+			<h1>Our Sponsors</h1>
 		</div>
 		<!-- sponsors logo -->
 		<div class="row logo-list">
@@ -625,9 +512,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<div class="logo">
 				<a href="https://www.joget.org/" target="_blank" rel="noopener"><img src="img/joget.png"/></a>
 			</div>
-		</div>
-		<div class="row logo-list">
-			<!--GOLD-->
 			<!--Pixl8-->
 			<div class="logo">
 				<a href="https://www.pixl8.co.uk/" target="_blank" rel="noopener"><img src="img/pixl8.png"></a>

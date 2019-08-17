@@ -477,14 +477,13 @@ p{
 	background-color: #FAFAFA;
 }
 .logo-list{
-	width: 80%;	
+	width: 60%;	
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: row;
-	flex-wrap: wrap;
 }
 .logo{
-	width: 20%;
+	width: 30%;
 }
 .logo a{
 	text-decoration: none;
@@ -656,8 +655,9 @@ footer .center{
 	}
 	.logo-list{
 		width: 40%;
-		margin: 20px 10px;
+		margin: 0 auto;
 		flex-direction: column;
+		
 	}
 	.logo img{
 		margin: 0px;
@@ -883,6 +883,8 @@ footer .center{
 		margin: 0 auto;
 		width: 50%;
 		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
 	}
 
 	.btn-container a{
